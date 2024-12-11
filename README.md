@@ -193,7 +193,6 @@ To get started, navigate to the [Workshop Labs](./workshop-labs.md) page where y
 
 - [GitHub CLI Documentation](https://cli.github.com/manual): Automate and manage workflows directly from the command line.
 - [Docker Hub](https://hub.docker.com/): Explore and share Docker images for use in custom Docker actions.
-- [Using Actions with Azure](https://learn.microsoft.com/en-us/azure/devops/pipelines/repos/github-actions): A guide to integrating GitHub Actions with Azure services.
 - [Using Actions with AWS](https://docs.aws.amazon.com/codepipeline/latest/userguide/github-actions.html): Learn how to integrate GitHub Actions with AWS.
 
 ---
