@@ -2,7 +2,7 @@
   <img src="./images/logo.png" alt="GitHub Actions Workshop Logo" height="128">
 </p>
 
-<!-- <h1 align="center">GitHub Actions Workshop</h1> -->
+<!-- <h1 align="center">GitHub Actions Workshop</h1> added some more comments-->
 
 <p align="center">⭐ If you like this repo, star it on GitHub — it helps a lot! ⭐</p>
 
