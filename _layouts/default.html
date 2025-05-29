@@ -20,9 +20,10 @@
   <body>
       <div id="header">
         <nav>
-          <ul>
+          <!-- <ul>
             <li class="fork"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
-          </ul>
+          </ul> -->
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
         </nav>
       </div><!-- end header -->
 
@@ -31,10 +32,11 @@
       <section>
         <div id="title">
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
-          <p>{{ site.tagline | default: site.description | default: site.github.project_tagline }}</p>
+          <!-- <p>{{ site.tagline | default: site.description | default: site.github.project_tagline }}</p> -->
           <hr>
           <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
+          <!-- <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span> -->
+          <span class="credits right">View on <a href="{{ site.github.repository_url }}">GitHub</a></span>
         </div>
 
         {{ content }}

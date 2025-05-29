@@ -333,7 +333,7 @@ for lab, solution, status in data:
         current_id += 1  # Increment the ID only for non-blank rows
 
 # File path where the markdown table will be saved
-file_path = "workshop-labs.md"
+file_path = "labs.md"
 
 # Save the generated table to the markdown file
 with open(file_path, "w") as file:
