@@ -1,15 +1,12 @@
+variable "webapp_name" {
+  type = string
+}
+
 variable "resource_group_name" {
-  type        = string
-  description = "Resource Group Name"
+  type = string
 }
 
 variable "location" {
-  type        = string
-  description = "Azure Region"
-  default     = "East US"
-}
-
-variable "webapp_name" {
-  type        = string
-  description = "Web App Name"
+  type    = string
+  default = "East US"
 }
