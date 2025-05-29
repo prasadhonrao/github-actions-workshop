@@ -17,4 +17,13 @@ resource "azurerm_linux_web_app" "webapp" {
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   service_plan_id     = azurerm_service_plan.app_service_plan.id
+
+  site_config {
+    # For example, configure the runtime stack
+    linux_fx_version = "NODE|18-lts"   # Adjust runtime as per your app (e.g. "DOTNETCORE|7.0", "NODE|18-lts", "PYTHON|3.9", etc.)
+  }
+
+  app_settings = {
+    "WEBSITES_ENABLE_APP_SERVICE_STORAGE" = "false"
+  }
 }
