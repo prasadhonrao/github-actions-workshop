@@ -1,4 +1,4 @@
-# theme: jekyll-theme-midnight
+theme: jekyll-theme-midnight
 title: GitHub Actions Workshop
 description: |
   Master GitHub Actions with hands-on labs and exercises. Learn how to automate workflows, run tests, deploy applications, and more using GitHub's powerful automation platform. This repository has everything you need to get started with continuous integration and continuous deployment.
