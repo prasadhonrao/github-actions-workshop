@@ -41,6 +41,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: flask-app
+          path: app.zip
 
       - name: Azure Login
         uses: azure/login@v2
