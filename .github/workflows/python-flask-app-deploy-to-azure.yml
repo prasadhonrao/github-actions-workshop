@@ -36,6 +36,12 @@ jobs:
       - name: Archive Flask app
         run: zip -r app.zip .
 
+        # This is only used for testing purpose to check if the zip file is created correctly
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: flask-app
+
       - name: Azure Login
         uses: azure/login@v2
         with:
