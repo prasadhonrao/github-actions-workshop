@@ -46,7 +46,3 @@ jobs:
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
           package: app.zip
-
-      - name: Clean up
-        run: rm app.zip
-        working-directory: ${{ env.WORKING_DIRECTORY }}
