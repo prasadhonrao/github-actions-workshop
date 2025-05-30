@@ -6,6 +6,12 @@ on:
       - '.github/workflows/python-flask-app-deploy-to-azure.yml'
       - 'src/python/flask-app/**'
 
+env:
+  AZURE_WEBAPP_NAME: github-actions-workshop-flask-webapp
+  AZURE_WEBAPP_PACKAGE_PATH: .
+  PYTHON_VERSION: '3.11'
+  WORKING_DIRECTORY: 'src/python/flask-app'
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -17,7 +23,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: ${{ env.PYTHON_VERSION }}
 
       - name: Upgrade pip
         run: python -m pip install --upgrade pip
@@ -25,12 +31,22 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-        working-directory: src/python/flask-app
+        working-directory: ${{ env.WORKING_DIRECTORY }}
 
-      # - name: Deploy to Azure Web App
-      #   uses: azure/webapps-deploy@v2
-      #   with:
-      #     app-name: <YOUR_WEB_APP_NAME>
-      #     slot-name: Production
-      #     publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-      #     package: .
+      - name: Archive Flask app
+        run: zip -r app.zip .
+
+      - name: Azure Login
+        uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_SERVICE_PRINCIPAL }}
+
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
+          package: app.zip
+
+      - name: Clean up
+        run: rm app.zip
+        working-directory: ${{ env.WORKING_DIRECTORY }}
