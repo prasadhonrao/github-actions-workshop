@@ -35,6 +35,7 @@ jobs:
 
       - name: Archive Flask app
         run: zip -r app.zip .
+        working-directory: ${{ env.WORKING_DIRECTORY }}
 
         # This is only used for testing purpose to check if the zip file is created correctly
       - name: Upload artifact
