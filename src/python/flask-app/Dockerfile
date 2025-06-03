@@ -1,5 +1,5 @@
-# Use the official Python image as a parent image
-FROM python:3.11-slim
+# Use the official Python Windows image as a parent image
+FROM mcr.microsoft.com/python:3.11-windowsservercore-ltsc2022
 
 # Set the working directory in the container
 WORKDIR /app
@@ -8,7 +8,7 @@ WORKDIR /app
 COPY requirements.txt ./
 
 # Install dependencies if requirements.txt is present
-RUN if [ -f requirements.txt ]; then pip install --no-cache-dir -r requirements.txt; fi
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application code
 COPY . .
