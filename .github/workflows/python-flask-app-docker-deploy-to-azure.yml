@@ -8,8 +8,8 @@ on:
       - 'src/python/flask-app/**'
 
 env:
-  AZURE_WEBAPP_NAME: app-flask-webapp
-  IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/flask-app
+  AZURE_WEBAPP_NAME: app-flask-webapp-on-windows-using-docker
+  DOCKER_IMAGE: prasadhonrao/flask-app
   WORKING_DIRECTORY: 'src/python/flask-app'
 
 jobs:
@@ -20,22 +20,26 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+      - name: Build Local Docker Image
+        run: docker image build -t aspnet-weather-webapi .
 
-      - name: Log in to GitHub Container Registry
-        uses: docker/login-action@v3
-        with:
-          registry: ghcr.io
-          username: ${{ github.repository_owner }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: List Docker Images
+        run: docker image ls
 
-      - name: Build and push Docker image
-        uses: docker/build-push-action@v5
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v2
         with:
-          context: ${{ env.WORKING_DIRECTORY }}
-          push: true
-          tags: ${{ env.IMAGE_NAME }}:latest
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Tag Image to latest
+        run: docker tag aspnet-weather-webapi ${{ env.DOCKER_IMAGE }}:latest
+
+      - name: Push Image with latest tag to Docker Hub Registry
+        run: docker push ${{ env.DOCKER_IMAGE }}:latest
+
+      - name: List Docker Images
+        run: docker image ls
 
       - name: Azure Login
         uses: azure/login@v2
@@ -46,4 +50,4 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
-          images: ${{ env.IMAGE_NAME }}:latest
+          images: ${{ env.DOCKER_IMAGE }}:latest
