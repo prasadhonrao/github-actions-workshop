@@ -3,22 +3,29 @@ name: JS Static Web App Deploy to Azure
 on:
   workflow_dispatch:
   push:
+    paths:
+      - '.github/workflows/js-static-web-app-deploy-to-azure.yml'
+      - 'src/javascript/simple-spa/**'
     branches:
       - main
-
 env:
   WORKING_DIRECTORY: 'src/javascript/simple-spa'
 
 jobs:
-  build_and_deploy:
+  build_and_deploy_job:
+    name: Build and Deploy Job
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout Code
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18' # Use version that matches your local dev env
+          node-version: '18'
 
       - name: Install dependencies
         run: npm install
@@ -28,11 +35,24 @@ jobs:
         run: npm run build
         working-directory: ${{ env.WORKING_DIRECTORY }}
 
-      - name: Build and Deploy
+      - name: Install OIDC Client from Core Package
+        run: npm install @actions/core@1.6.0 @actions/http-client
+
+      - name: Get Id Token
+        uses: actions/github-script@v6
+        id: idtoken
+        with:
+          script: |
+            const coredemo = require('@actions/core')
+            return await coredemo.getIDToken()
+          result-encoding: string
+
+      - name: Deploy
+        id: deploy
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_VICTORIOUS_MEADOW_08A069503 }} # Ensure this secret exists in your repository settings
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_VICTORIOUS_MEADOW_08A069503 }}
           action: 'upload'
-          app_location: ${{ env.WORKING_DIRECTORY }}
-          output_location: 'dist'
+          app_location: './src/javascript/simple-spa' # App source code path
+          output_location: 'dist' # Built app content directory - optional
+          github_id_token: ${{ steps.idtoken.outputs.result }}
