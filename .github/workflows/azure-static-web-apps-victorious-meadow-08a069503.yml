@@ -2,9 +2,6 @@ name: JavaScript SPA Deploy to Azure Static Web App
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
 env:
   WORKING_DIRECTORY: 'src/javascript/simple-spa'
 
