@@ -1,5 +1,5 @@
 # Use the official Python Windows image as a parent image
-FROM mcr.microsoft.com/windows/servercore:ltsc2025
+FROM mcr.microsoft.com/windows/servercore:ltsc2022
 
 # Set the working directory in the container
 WORKDIR /app
