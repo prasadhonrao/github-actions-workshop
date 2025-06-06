@@ -1,10 +1,10 @@
-## Lab: Manual Workflow
+## Lab: Hello World Workflow
 
 ## Introduction
 
-In this lab, you will create a manual workflow that can be triggered manually. The workflow will simply echo a message to the console, giving you a hands-on understanding of how manual workflows function in GitHub Actions.
+In this lab, you will create a simple GitHub Actions workflow from scratch that echoes "Hello, World!" to the console. This will help you understand how to define and trigger a basic workflow in GitHub Actions.
 
-> **Estimated Duration**: 15-20 minutes
+> **Estimated Duration**: 15–20 minutes
 
 ---
 
@@ -13,75 +13,70 @@ In this lab, you will create a manual workflow that can be triggered manually. T
 ### Step 1: Set up your repository
 
 1. Navigate to the repository you created in the previous lab.
-   - If you haven’t completed the previous lab, clone the template repository by following the instructions [here](./create-repository-using-template-repository-lab.md).
 
-### Step 2: Create the manual workflow
+   - If you haven’t completed the previous lab, clone the template repository by following the [instructions to clone the template repository](./../../create-repository-using-template-repository-lab.md).
 
-1. Go to the **Actions** tab in your repository.
-2. Click on the **New workflow** button.
-3. From the list of workflow templates, select **Manual workflow**, and then click on **Configure**.
-4. This will open the GitHub Actions workflow editor.
+### Step 2: Create the workflow from scratch
 
-### Step 3: Add workflow content
+1. In your repository, click the **Code** tab (if not already there).
 
-1. In the workflow editor:
+2. Navigate to the `.github` folder. If it doesn't exist, create it:
 
-   - Name the workflow file `intro-manual-workflow.yml`.
-   - Paste the following YAML content into the editor:
+   - Click **Add file** > **Create new file**.
+   - Name the new folder: `.github/` (GitHub will treat it as a folder when followed by another folder or file).
+
+3. Inside the `.github` folder, create a new folder named `workflows`:
+
+   - Name the new file: `.github/workflows/intro-hello-world-workflow.yml`.
+
+4. Paste the following YAML content into the editor:
 
    ```yaml
-   name: Intro - Manual Workflow
+   name: Intro - Hello World Workflow
 
-   on:
-     workflow_dispatch:
-     push:
-       paths:
-         - '.github/workflows/intro-manual-workflow.yml'
+   on: push
 
    jobs:
      run:
        runs-on: ubuntu-latest
        steps:
-         - name: How's GitHub Actions?
-           run: echo "Awesome!!"
+         - name: Say Hello to the World
+           run: echo "Hello, World!"
    ```
 
-2. Click the **Commit changes** button to save the workflow. This will create a new file `.github/workflows/intro-manual-workflow.yml` in your repository.
+5. Scroll down and click the **Commit new file** button to save the workflow.
 
-### Step 4: Understand the workflow
+### Step 3: Understand the workflow
 
-1. The workflow is named **Intro - Manual Workflow**.
-2. It triggers on two events:
-   - **`workflow_dispatch`**: This allows you to run the workflow manually.
-   - **`push`**: The workflow will also run when changes are pushed to `.github/workflows/intro-manual-workflow.yml`.
-3. The workflow uses the **`ubuntu-latest`** runner and contains a single job named **`run`** with one step that outputs the message: **`Awesome!!`**.
+1. The workflow is named **Intro - Hello World Workflow**.
+2. It is triggered by the `push` event, meaning it will run anytime you push changes to the repository.
+3. It runs on the **ubuntu-latest** virtual machine.
+4. It has a single job named **run**.
+5. The job has one step that prints **"Hello, World!"** to the console.
 
-### Step 5: Run the workflow
+### Step 4: Trigger the workflow
 
-1. Go back to the **Actions** tab. You should see the newly created workflow listed there.
+1. Make a small change in your repository to trigger the workflow (since it runs on `push`).
 
-   - If the workflow is not running, you can manually trigger it.
+   - For example, edit the `README.md` file and add a comment line.
+   - Commit the change to the `main` branch.
 
-2. Click on the **Run workflow** button.
+2. Go to the **Actions** tab.
 
-   - From the dropdown, select the **main** branch.
-   - Click **Run workflow** to trigger the workflow.
+   - You should see a new workflow run listed for **Intro - Hello World Workflow**.
 
-3. Monitor the workflow execution.
-   - You will see the workflow listed as running in the **Actions** tab.
+### Step 5: View the results
 
-### Step 6: View the results
-
-1. Click on the workflow run to view its details.
-2. Inside the workflow details page, click on the **run** job to view the job’s specifics.
-3. Expand the step titled **How's GitHub Actions?** to view the output.
-4. You should see the message **`Awesome!!`** displayed as the output of the step.
+1. Click on the workflow run to open its details.
+2. Click on the **run** job.
+3. Expand the step titled **Say Hello to the World**.
+4. You should see the message **`Hello, World!`** in the logs.
 
 ---
 
 ## Summary
 
-In this lab, you created and ran a manual workflow in GitHub Actions. The workflow was triggered manually, ran a single job, and echoed a message to the console. This lab provided insight into how workflows are defined, triggered, and executed.
+In this lab, you created a GitHub Actions workflow manually, without using any built-in templates. You learned how to define a basic workflow file, trigger it by pushing changes, and inspect its execution output.
 
 ---
 
