@@ -10,6 +10,11 @@ data = [
         ""
     ),
     (
+        "[Hello World Workflow](./labs/intro/hello-world/lab.md)", 
+        "[View Solution](./labs/intro/hello-world/solution.md)", 
+        "[![Intro - Manual Workflow](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-hello-world-workflow.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-hello-world-workflow.yml)"
+    ),
+    (
         "[Manual Workflow](./labs/intro/intro-manual-workflow-lab.md)", 
         "[View Solution](./labs/intro/intro-manual-workflow-solution.md)", 
         "[![Intro - Manual Workflow](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-manual-workflow.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-manual-workflow.yml)"
