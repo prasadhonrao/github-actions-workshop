@@ -1,6 +1,6 @@
 # This is a basic workflow that is manually triggered
 
-name: Intro - Manual Template Workflow
+name: Intro - Manual Workflow
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
@@ -27,6 +27,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Runs a single command using the runners shell
-    - name: Send greeting
-      run: echo "Hello ${{ inputs.name }}"
+      # Runs a single command using the runners shell
+      - name: Send greeting
+        run: echo "Hello ${{ inputs.name }}"
