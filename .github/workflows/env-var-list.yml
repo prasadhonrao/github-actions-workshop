@@ -1,4 +1,4 @@
-name: Env Var List
+name: Env - Var List
 
 on:
   workflow_dispatch:

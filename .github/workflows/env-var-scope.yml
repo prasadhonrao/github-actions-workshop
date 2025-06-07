@@ -1,4 +1,4 @@
-name: Env Var Scope
+name: Env - Var Scope
 
 on:
   workflow_dispatch:
