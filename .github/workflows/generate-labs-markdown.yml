@@ -1,0 +1,35 @@
+name: Generate Labs Markdown
+
+on:
+  push:
+    paths:
+      - 'generator.py'
+  workflow_dispatch:
+
+jobs:
+  generate-labs-doc:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Run generator.py
+        run: python generator.py
+
+      - name: Commit updated labs.md
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet labs.md; then
+            git add labs.md
+            git commit -m "Auto-update labs.md [skip ci]"
+            git push
+          else
+            echo "No changes to commit."
+          fi
