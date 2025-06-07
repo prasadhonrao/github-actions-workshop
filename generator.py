@@ -146,7 +146,7 @@ data = [
         ""
     ),
     (
-        "[Python Upper App Overview](./labs/python/upper-app/python-upper-app-overview.md)", 
+        "[Python Upper App Overview](./labs/python/upper-app/app-overview.md)", 
         "N/A", 
         "N/A"
     ),
@@ -156,8 +156,8 @@ data = [
         "[![Python Upper App CI/CD](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/python-upper-app-ci-cd.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/python-upper-app-ci-cd.yml)"
     ),
     (
-        "[Python Flask App Deploy to Azure](./labs/python/upper/flask-app-deploy-to-azure/lab.md)", 
-        "[View Solution](./labs/python/upper/flask-app-deploy-to-azure/solution.md)", 
+        "[Python Flask App Deploy to Azure](./labs/python/flask-app-deploy-to-azure/lab.md)", 
+        "[View Solution](./labs/python/flask-app-deploy-to-azure/solution.md)", 
         "[![Python Upper App CI/CD](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/python-flask-app-deploy-to-azure.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/python-upper-app-ci-cd.yml)"
     ),  
     (
@@ -196,8 +196,8 @@ data = [
         ""
     ),
     (
-        "[Pull Request Event](./labs/events/pull-request-event-lab.md)", 
-        "[View Solution](./labs/events/pull-request-event-solution.md)", 
+        "[Pull Request Event](./labs/events/pull-request/lab.md)", 
+        "[View Solution](./labs/events/pull-request/solution.md)", 
         "[![Reusable Workflow Echo Caller](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/reusable-workflow-echo-caller.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/reusable-workflow-echo-caller.yml)"
     ),
     (
