@@ -236,13 +236,13 @@ data = [
         ""
     ),    
     (
-        "[Create Shared Workflow](./labs/aspnet-webapp/create-shared-workflow-lab.md)", 
-        "[View Solution](./labs/aspnet-webapp/create-shared-workflow-solution.md)", 
+        "[Create Shared Workflow](./labs/shared-workflow/azure-app-service-deploy/lab.md)", 
+        "[View Solution](./labs/shared-workflow/azure-app-service-deploy/solution.md)", 
         "N/A", 
     ),
     (
-        "[ASP.NET Web App Deploy to Azure Using Shared Workflow](./labs/aspnet-webapp/deploy-to-azure-shared-workflow-lab.md)", 
-        "[View Solution](./labs/aspnet-webapp/deploy-to-azure-shared-workflow-solution.md)", 
+        "[ASP.NET Web App Deploy to Azure Using Shared Workflow](./labs/aspnet-webapp/deploy-to-azure/shared-workflow/lab.md)", 
+        "[View Solution](./labs/aspnet-webapp/deploy-to-azure/shared-workflow/solution.md)", 
         "[![ASP.NET Web App Deploy using Shared Workflow](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-deploy-to-azure-using-shared-workflow.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-deploy-to-azure-using-shared-workflow.yml)"
     ),
     (
