@@ -1,6 +1,6 @@
 data = [
     (
-        "[Create Repository Using Template Repository](./labs/create-repository-using-template-repository-lab.md)", 
+        "[Create Repository Using Template Repository](./labs/template-repository/lab.md)", 
         "N/A", 
         "N/A"
     ),
@@ -15,28 +15,28 @@ data = [
         "[![Intro - Manual Workflow](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-hello-world-workflow.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-hello-world-workflow.yml)"
     ),
     (
-        "[Manual Workflow](./labs/intro/intro-manual-workflow-lab.md)", 
-        "[View Solution](./labs/intro/intro-manual-workflow-solution.md)", 
+        "[Manual Workflow](./labs/intro/manual-workflow/lab.md)", 
+        "[View Solution](./labs/intro/manual-workflow/solution.md)", 
         "[![Intro - Manual Workflow](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-manual-workflow.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-manual-workflow.yml)"
     ),
     (
-        "[Simple Workflow](./labs/intro/intro-simple-workflow-lab.md)", 
-        "[View Solution](./labs/intro/intro-simple-workflow-solution.md)", 
+        "[Simple Workflow](./labs/intro/simple-workflow/lab.md)", 
+        "[View Solution](./labs/intro/simple-workflow/solution.md)", 
         "[![Intro - Simple Workflow](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-simple-workflow.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-simple-workflow.yml)"
     ),
     (
-        "[Custom Workflow](./labs/intro/intro-custom-workflow-lab.md)", 
-        "[View Solution](./labs/intro/intro-custom-workflow-solution.md)", 
+        "[Custom Workflow](./labs/intro/custom-workflow/lab.md)", 
+        "[View Solution](./labs/intro/custom-workflow/solution.md)", 
         "[![Intro - Custom Workflow](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-custom-workflow.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-custom-workflow.yml)"
     ),
     (
-        "[Scheduled Workflow](./labs/intro/intro-scheduled-workflow-lab.md)", 
-        "[View Solution](./labs/intro/intro-scheduled-workflow-solution.md)", 
+        "[Scheduled Workflow](./labs/intro/scheduled-workflow/lab.md)", 
+        "[View Solution](./labs/intro/scheduled-workflow/solution.md)", 
         "[![Intro - Scheduled Workflow](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-scheduled-workflow.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-scheduled-workflow.yml)"
     ),
     (
-        "[YAML Syntax](./labs/intro/intro-yaml-syntax-lab.md)", 
-        "[View Solution](./labs/intro/intro-yaml-syntax-solution.md)", 
+        "[YAML Syntax](./labs/intro/yaml-syntax/lab.md)", 
+        "[View Solution](./labs/intro/yaml-syntax/solution.md)", 
         "[![Intro - YAML Syntax](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-yaml-syntax.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-yaml-syntax.yml)"
     ),
     (
@@ -45,12 +45,12 @@ data = [
         ""
     ),
     (
-        "[Disabling a Workflow](./labs/misc/disabling-a-workflow-lab.md)", 
+        "[Disabling a Workflow](./labs/misc/disabling-a-workflow/lab.md)", 
         "N/A", 
         "N/A"
     ),
     (
-        "[Displaying Workflow Status Badge](./labs/misc/displaying-workflow-status-badge-lab.md)", 
+        "[Displaying Workflow Status Badge](./labs/misc/displaying-workflow-status-badge/lab.md)", 
         "N/A", 
         "N/A"
     ),
@@ -60,23 +60,23 @@ data = [
         ""
     ),
     (
-        "[Environment Variables and Secrets](./labs/env-var/env-var-secrets-lab.md)", 
-        "[View Solution](./labs/env-var/env-var-secrets-solution.md)", 
+        "[Environment Variables and Secrets](./labs/env-var-secrets/env-var-secrets/lab.md)", 
+        "[View Solution](./labs/env-var-secrets/env-var-secrets/solution.md)", 
         "[![Environment Variables and Secrets](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/env-var-secrets.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/env-var-secrets.yml)"
     ),
     (
-        "[Environment Variables Scope](./labs/env-var/env-var-scope-lab.md)", 
-        "[View Solution](./labs/env-var/env-var-scope-solution.md)", 
+        "[Environment Variables Scope](./labs/env-var-secrets/scope/lab.md)", 
+        "[View Solution](./labs/env-var-secrets/scope/solution.md)", 
         "[![Environment Variables Scope](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/env-var-scope.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/env-var-scope.yml)"
     ),
     (
-        "[Environment Variables List](./labs/env-var/env-var-list-lab.md)", 
-        "[View Solution](./labs/env-var/env-var-list-solution.md)", 
+        "[Environment Variables List](./labs/env-var-secrets/list/lab.md)", 
+        "[View Solution](./labs/env-var-secrets/list/solution.md)", 
         "[![Environment Variables List](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/env-var-list.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/env-var-list.yml)"
     ),
     (
-        "[Environment Deployment Protection Rule](./labs/env-var/env-deployment-protection-rule-lab.md)", 
-        "[View Solution](./labs/env-var/env-deployment-protection-rule-solution.md)", 
+        "[Environment Deployment Protection Rule](./labs/env-var-secrets/deployment-protection-rule/lab.md)", 
+        "[View Solution](./labs/env-var-secrets/deployment-protection-rule/solution.md)", 
         "[![Env - Deployment Protection Rule](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/env-deployment-protection-rule.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/env-deployment-protection-rule.yml)"
     ),
     (
