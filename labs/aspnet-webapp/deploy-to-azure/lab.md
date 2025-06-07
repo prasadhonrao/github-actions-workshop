@@ -15,7 +15,7 @@ Certainly! Here's the updated **Prerequisites** section with the new point relat
 ## Prerequisites
 
 1. **GitHub Repository**: Ensure that your repository has an ASP.NET web application located in the `src/dotnet/WebApp` directory.
-2. **Create an ASP.NET Web App**: If you don't have an existing ASP.NET web app, you can create one using the steps mentioned in the [Create ASP.NET Web App](./create-aspnet-webapp-lab.md) lab.
+2. **Create an ASP.NET Web App**: If you don't have an existing ASP.NET web app, you can create one using the steps mentioned in the [Create ASP.NET Web App](./../create-webapp/lab.md) lab.
 
 ---
 
