@@ -183,12 +183,12 @@ data = [
     (
         "[CSharp.ExtensionMethods - Publish Nuget Package ](./labs/csharp-extension-methods/publish-nuget-package/lab.md)", 
         "[View Solution](./labs/csharp-extension-methods/publish-nuget-package/solution.md)", 
-        "[![CSharp Extension Methods Build - Test - NuGet](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/csharp-extension-methods-build-test-nuget.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/csharp-extension-methods-build-test-nuget.yml)"
+        "[![CSharp Extension Methods - Publish NuGet Package](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/csharp-extension-methods-publish-nuget-package.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/csharp-extension-methods-publish-nuget-package.yml)"
     ),
     (
         "[CSharp.ExtensionMethods - Publish GitHub Package ](./labs/csharp-extension-methods/publish-github-package/lab.md)", 
         "[View Solution](./labs/csharp-extension-methods/publish-github-package/solution.md)", 
-        "[[![CSharp Extension Methods Release Artifacts](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/csharp-extension-methods-release-artifacts.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/csharp-extension-methods-release-artifacts.yml)"
+        "[![CSharp Extension Methods - Publish GitHub Package](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/csharp-extension-methods-publish-github-package.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/csharp-extension-methods-publish-github-package.yml)"
     ),
     (
         "",  # This row will be a blank row (no ID, no content)
