@@ -100,18 +100,13 @@ data = [
         "N/A"
     ),
     (
-        "[ASP.NET Web App Upload Artifact](./labs/aspnet-webapp/upload-artifact-lab.md)", 
-        "[View Solution](./labs/aspnet-webapp/upload-artifact-solution.md)", 
-        "[![ASP.NET Web App Upload Artifact](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-upload-artifact.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-upload-artifact.yml)"
+        "[ASP.NET Web App Upload Download Artifact](./labs/aspnet-webapp/upload-download-artifact/lab.md)", 
+        "[View Solution](./labs/aspnet-webapp/upload-download-artifact/solution.md)", 
+        "[![ASP.NET Web App Download Artifact](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-upload-download-artifact.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-upload-download-artifact.yml)"
     ),    
     (
-        "[ASP.NET Web App Download Artifact](./labs/aspnet-webapp/download-artifact-lab.md)", 
-        "[View Solution](./labs/aspnet-webapp/download-artifact-solution.md)", 
-        "[![ASP.NET Web App Download Artifact](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-download-artifact.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-download-artifact.yml)"
-    ),    
-    (
-        "[ASP.NET Web App Upload - Download Artifact Multiple OS](./labs/aspnet-webapp/upload-download-artifact-multiple-os-lab.md)", 
-        "[View Solution](./labs/aspnet-webapp/upload-download-artifact-multiple-os-solution.md)", 
+        "[ASP.NET Web App Upload - Download Artifact Multiple OS](./labs/aspnet-webapp/upload-download-artifact-multiple-os/lab.md)", 
+        "[View Solution](./labs/aspnet-webapp/upload-download-artifact-multiple-os/solution.md)", 
         "[![ASP.NET Web App Upload Download Artifact Multiple OS](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-upload-download-artifact-multiple-os.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-upload-download-artifact-multiple-os.yml)"
     ),
     (

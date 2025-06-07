@@ -1,9 +1,9 @@
-name: ASP.NET Web App Download Artifact
+name: ASP.NET Web App Upload Download Artifact
 
 on:
   push:
     paths:
-      - '.github/workflows/aspnet-webapp-download-artifact.yml'
+      - '.github/workflows/aspnet-webapp-upload-download-artifact.yml'
       - 'src/dotnet/WebApp/**'
   workflow_dispatch:
 
