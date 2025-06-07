@@ -1,64 +1,49 @@
-## Solution: Python Upper App CI/CD
+## Solution: Python Flask App Deploy to Azure
 
 ```yaml
-name: Python Upper App CI/CD
+name: Python Flask App Deploy to Azure
 on:
   workflow_dispatch:
   push:
     paths:
-      - '.github/workflows/python-upper-app-ci-cd.yml'
-      - 'src/python/upper_project/**'
+      - '.github/workflows/python-flask-app-deploy-to-azure.yml'
+      - 'src/python/flask-app/**'
+
+env:
+  AZURE_WEBAPP_NAME: app-flask-webapp-on-linux
+  AZURE_WEBAPP_PACKAGE_PATH: .
+  PYTHON_VERSION: '3.11'
+  WORKING_DIRECTORY: 'src/python/flask-app'
 
 jobs:
-  test-and-package:
-    strategy:
-      matrix:
-        os: [windows-latest, ubuntu-latest, macos-latest]
-        python-version: ['3.10', '3.11']
-    runs-on: ${{ matrix.os }}
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Code
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          python-version: ${{ matrix.python-version }}
-
-      - name: Print Python Version
-        run: python --version
+          python-version: ${{ env.PYTHON_VERSION }}
 
       - name: Upgrade pip
         run: python -m pip install --upgrade pip
 
-      - name: Run Unit Tests
-        run: python -m unittest discover tests
-        working-directory: src/python/upper_project
-
-      - name: Install pyinstaller
-        run: pip install pyinstaller
-
-      - name: Package Executable
+      - name: Install dependencies
         run: |
-          pyinstaller --onefile upper/upper.py
-        working-directory: src/python/upper_project
+          pip install -r requirements.txt
+        working-directory: ${{ env.WORKING_DIRECTORY }}
 
-      - name: List Packaged Files
-        run: ls -R ./src/python/upper_project/dist
-
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+      - name: Azure Login
+        uses: azure/login@v2
         with:
-          name: upper-executable-${{ matrix.os }}-${{ matrix.python-version }}
-          path: src/python/upper_project/dist/*
+          creds: ${{ secrets.AZURE_SERVICE_PRINCIPAL }}
 
-      - name: Test Executable
-        run: |
-          if [[ "$RUNNER_OS" == "Windows" ]]; then
-            ./dist/upper.exe Hello World
-          else
-            ./dist/upper Hello World
-          fi
-        working-directory: src/python/upper_project
-        shell: bash
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
+          package: ${{ env.WORKING_DIRECTORY }}
 ```
