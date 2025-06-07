@@ -85,7 +85,7 @@ data = [
         ""
     ),
     (
-        "[Create ASP.NET Web App](./labs/aspnet-webapp/create-aspnet-webapp-lab.md)", 
+        "[Create ASP.NET Web App](./labs/aspnet-webapp/create-webapp/lab.md)", 
         "N/A", 
         "N/A"
     ),
