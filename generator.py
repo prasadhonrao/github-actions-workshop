@@ -116,6 +116,12 @@ data = [
         "[![ASP.NET Web App Upload Download Artifact Multiple OS](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-upload-download-artifact-multiple-os.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-upload-download-artifact-multiple-os.yml)"
     ),
     (
+        "[ASP.NET Web App Deploy to Azure](./labs/aspnet-webapp/deploy-to-azure/lab.md)", 
+        "[View Solution](./labs/aspnet-webapp/deploy-to-azure/solution.md)", 
+        "[![ASP.NET Web App Deploy to Azure](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-deploy-to-azure.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-deploy-to-azure.yml)"
+    ),  
+
+    (
         "",  # This row will be a blank row (no ID, no content)
         "",
         ""
@@ -211,20 +217,15 @@ data = [
         "[![Reusable Workflow Echo Caller](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/reusable-workflow-echo-caller.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/reusable-workflow-echo-caller.yml)"
     ),
     (
-        "[Reusable Workflow - Azure App Service Deploy](./labs/reusable-workflow/azure-app-service-deploy/lab.md)", 
-        "[View Solution](./labs/reusable-workflow/azure-app-service-deploy/solution.md)", 
-        "N/A", 
-    ),
-    (
         "",  # This row will be a blank row (no ID, no content)
         "",
         ""
     ),
     (
-        "[ASP.NET Web App Deploy to Azure](./labs/aspnet-webapp/deploy-to-azure/lab.md)", 
-        "[View Solution](./labs/aspnet-webapp/deploy-to-azure/solution.md)", 
-        "[![ASP.NET Web App Deploy to Azure](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-deploy-to-azure.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-deploy-to-azure.yml)"
-    ),  
+        "[Reusable Workflow - Azure App Service Deploy](./labs/reusable-workflow/azure-app-service-deploy/lab.md)", 
+        "[View Solution](./labs/reusable-workflow/azure-app-service-deploy/solution.md)", 
+        "N/A", 
+    ),
     (
         "[ASP.NET Web App Deploy to Azure Using Reusable Workflow](./labs/aspnet-webapp/deploy-to-azure/reusable-workflow/lab.md)", 
         "[View Solution](./labs/aspnet-webapp/deploy-to-azure/reusable-workflow/solution.md)", 
@@ -236,7 +237,7 @@ data = [
         ""
     ),    
     (
-        "[Create Shared Workflow](./labs/shared-workflow/azure-app-service-deploy/lab.md)", 
+        "[Shared Workflow - Azure App Service Deploy](./labs/shared-workflow/azure-app-service-deploy/lab.md)", 
         "[View Solution](./labs/shared-workflow/azure-app-service-deploy/solution.md)", 
         "N/A", 
     ),
