@@ -1,4 +1,7 @@
-name: CSharp Extension Methods Build - Test - NuGet
+## Solution: C# Extension Methods - Publish NuGet Package
+
+```yaml
+name: CSharp Extension Methods - Publish NuGet Package
 
 on:
   workflow_dispatch:
@@ -43,3 +46,4 @@ jobs:
 
       - name: Publish NuGet Package to NuGet.org
         run: dotnet nuget push ./src/dotnet/CSharp.ExtensionMethods/CSharp.ExtensionMethods/bin/Release/*.nupkg --source "https://api.nuget.org/v3/index.json" --api-key ${{ secrets.NUGET_API_KEY }} --skip-duplicate
+```

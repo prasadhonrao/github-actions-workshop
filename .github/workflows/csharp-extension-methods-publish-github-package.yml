@@ -1,18 +1,16 @@
-## Solution: C# Extension Methods - Build, Test, and Publish NuGet Package
-
-```yaml
-name: CSharp Extension Methods Build - Test - NuGet
+name: CSharp Extension Methods - Publish GitHub Package
 
 on:
   workflow_dispatch:
   push:
     paths:
+      - '.github/workflows/csharp-extension-methods-release-artifacts.yml'
       - 'src/dotnet/CSharp.ExtensionMethods/**'
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       packages: write
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -41,9 +39,23 @@ jobs:
         run: dotnet pack --configuration Release
         working-directory: ./src/dotnet/CSharp.ExtensionMethods/CSharp.ExtensionMethods
 
+      # Verify that the .nupkg file exists
+      - name: List contents of the bin/Release directory
+        run: ls ./src/dotnet/CSharp.ExtensionMethods/CSharp.ExtensionMethods/bin/Release/
+
       - name: Publish NuGet Package to GitHub Packages
         run: dotnet nuget push ./src/dotnet/CSharp.ExtensionMethods/CSharp.ExtensionMethods/bin/Release/*.nupkg --source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" --api-key ${{ secrets.GITHUB_TOKEN }} --skip-duplicate
 
       - name: Publish NuGet Package to NuGet.org
         run: dotnet nuget push ./src/dotnet/CSharp.ExtensionMethods/CSharp.ExtensionMethods/bin/Release/*.nupkg --source "https://api.nuget.org/v3/index.json" --api-key ${{ secrets.NUGET_API_KEY }} --skip-duplicate
-```
+
+      # Create a GitHub Release
+      - name: Create GitHub Release
+        id: create_release
+        uses: actions/create-release@v1
+        with:
+          tag_name: v1.0.${{ github.run_number }}
+          release_name: 'Release v1.0.${{ github.run_number }}'
+          body: 'Release of CSharp.ExtensionMethods NuGet package'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

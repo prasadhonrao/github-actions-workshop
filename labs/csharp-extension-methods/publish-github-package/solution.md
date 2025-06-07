@@ -1,7 +1,7 @@
-## Solution: C# Extension Methods - Release Artifacts
+## Solution: C# Extension Methods - Publish GitHub Package
 
 ```yaml
-name: CSharp Extension Methods Release Artifacts
+name: CSharp Extension Methods - Publish GitHub Package
 
 on:
   workflow_dispatch:

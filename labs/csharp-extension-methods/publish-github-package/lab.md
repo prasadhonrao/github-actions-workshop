@@ -1,4 +1,4 @@
-## Lab: C# Extension Methods - Build, Test, and Publish NuGet Package
+## Lab: C# Extension Methods - Publish GitHub Package
 
 This lab will show you how to create a GitHub Actions workflow to test a C# Extension Methods project, create a NuGet package, and publish it to both GitHub Packages and NuGet.org.
 
@@ -22,10 +22,10 @@ This lab will show you how to create a GitHub Actions workflow to test a C# Exte
    dotnet test
    ```
 
-5. Now we will create a GitHub Actions workflow to build and test the project. Create a new file named `csharp-extension-methods-build-test-nuget.yml` in the `.github/workflows` directory and add the following content:
+5. Now we will create a GitHub Actions workflow to build and test the project. Create a new file named `csharp-extension-methods-release-artifacts.yml` in the `.github/workflows` directory and add the following content:
 
    ```yaml
-   name: CSharp Extension Methods Build - Test - NuGet
+   name: CSharp Extension Methods - Publish GitHub Package
 
    on:
      workflow_dispatch:
@@ -54,6 +54,17 @@ This lab will show you how to create a GitHub Actions workflow to test a C# Exte
          - name: Run Unit Tests
            run: dotnet test --no-restore --verbosity normal
            working-directory: ./src/dotnet/CSharp.ExtensionMethods/CSharp.ExtensionMethods.Tests
+
+         # Create a GitHub Release
+         - name: Create GitHub Release
+           id: create_release
+           uses: actions/create-release@v1
+           with:
+             tag_name: v1.0.${{ github.run_number }}
+             release_name: 'Release v1.0.${{ github.run_number }}'
+             body: 'Release of CSharp.ExtensionMethods NuGet package'
+           env:
+             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
    ```
 
 6. Commit the changes and push them to the repository.
@@ -104,13 +115,34 @@ This lab will show you how to create a GitHub Actions workflow to test a C# Exte
 
 21. Click on the latest workflow run to view the details.
 
-22. You have successfully created a GitHub Actions workflow to test a C# Extension Methods project, create a NuGet package, and publish it to both GitHub Packages and NuGet.org.
+22. Next we will create a GitHub Release for the NuGet package. Add the following steps to the existing workflow:
 
-23. Go to the "Packages" tab in your repository to view the published NuGet package.
+    ```yaml
+    # Create a GitHub Release
+    - name: Create GitHub Release
+      id: create_release
+      uses: actions/create-release@v1
+      with:
+        tag_name: v1.0.${{ github.run_number }}
+        release_name: 'Release v1.0.${{ github.run_number }}'
+        body: 'Release of CSharp.ExtensionMethods NuGet package'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    ```
 
-24. Navigate to the NuGet.org website to view the published NuGet package.
+23. Commit the changes and push them to the repository.
 
-25. You can now use the published NuGet package in your projects.
+24. Navigate to the "Actions" tab in your repository to view the workflow runs.
+
+25. Click on the latest workflow run to view the details.
+
+26. You have successfully created a GitHub Actions workflow to test a C# Extension Methods project, create a NuGet package, and publish it to both GitHub Packages and NuGet.org.
+
+27. Go to the "Packages" tab in your repository to view the published NuGet package.
+
+28. Navigate to the NuGet.org website to view the published NuGet package.
+
+29. You can now use the published NuGet package in your projects.
 
 ## Summary
 
