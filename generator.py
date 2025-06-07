@@ -181,13 +181,13 @@ data = [
         ""
     ),
     (
-        "[Build and Publish CSharp.ExtensionMethods as a Nuget package ](./labs/csharp-extension-methods/csharp-extension-methods-build-test-nuget-lab.md)", 
-        "[View Solution](./labs/csharp-extension-methods/csharp-extension-methods-build-test-nuget-solution.md)", 
+        "[CSharp.ExtensionMethods - Publish Nuget Package ](./labs/csharp-extension-methods/publish-nuget-package/lab.md)", 
+        "[View Solution](./labs/csharp-extension-methods/publish-nuget-package/solution.md)", 
         "[![CSharp Extension Methods Build - Test - NuGet](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/csharp-extension-methods-build-test-nuget.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/csharp-extension-methods-build-test-nuget.yml)"
     ),
     (
-        "[CSharp.ExtensionMethods Release Artifacts ](./labs/csharp-extension-methods/csharp-extension-methods-release-artifacts-lab.md)", 
-        "[View Solution](./labs/csharp-extension-methods/csharp-extension-methods-release-artifacts-solution.md)", 
+        "[CSharp.ExtensionMethods - Publish GitHub Package ](./labs/csharp-extension-methods/publish-github-package/lab.md)", 
+        "[View Solution](./labs/csharp-extension-methods/publish-github-package/solution.md)", 
         "[[![CSharp Extension Methods Release Artifacts](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/csharp-extension-methods-release-artifacts.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/csharp-extension-methods-release-artifacts.yml)"
     ),
     (
