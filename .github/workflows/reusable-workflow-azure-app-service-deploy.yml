@@ -1,4 +1,4 @@
-name: Reusable Workflow Azure Web App Deploy
+name: Reusable Workflow Azure App Service Deploy
 
 on:
   workflow_call:

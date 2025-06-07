@@ -1,4 +1,4 @@
-## Lab: Shared Workflow Azure Web App Deploy
+## Lab: Create Shared Workflow To Deploy ASP.NET Web App to Azure
 
 ## Objective
 
@@ -29,7 +29,7 @@ In this lab, you will learn how to create a shared GitHub Actions workflow for d
    Paste the following YAML content into the `deploy.yml` file. This workflow is responsible for deploying the web app to Azure.
 
 ```yaml
-name: Shared Workflow Azure Web App Deploy
+name: Shared Workflow Azure App Service Deploy
 
 on:
   workflow_call:
