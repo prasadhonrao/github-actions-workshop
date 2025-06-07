@@ -1,0 +1,34 @@
+name: Misc - Auto-Triage New Issue
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  auto-triage:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write # Required to label and assign issues
+
+    steps:
+      - name: Add label and assign issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issueNumber = context.issue.number;
+            const repo = context.repo.repo;
+            const owner = context.repo.owner;
+
+            await github.rest.issues.addLabels({
+              owner,
+              repo,
+              issue_number: issueNumber,
+              labels: ['triage']
+            });
+
+            await github.rest.issues.addAssignees({
+              owner,
+              repo,
+              issue_number: issueNumber,
+              assignees: ['prasadhonrao']
+            });
