@@ -1,7 +1,7 @@
-## Solution: Creating a Shared Workflow to Deploy an ASP.NET Web App to Azure
+## Solution: Reusable Workflow - Azure App Service Deploy
 
 ```yaml
-name: Shared Workflow Azure Web App Deploy
+name: Reusable Workflow - Azure App Service Deploy
 
 on:
   workflow_call:

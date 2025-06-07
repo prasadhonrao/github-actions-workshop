@@ -6,7 +6,7 @@ In this lab, you will integrate the reusable workflow for deploying an ASP.NET W
 
 ### Prerequisites:
 
-1. **Reusable Workflow for Azure Deployment**: You should have the reusable workflow created in the previous lab that handles deployment to Azure. If not, please refer to the [Create Reusable Workflow](./create-reusable-workflow-lab.md) to create it.
+1. **Reusable Workflow for Azure Deployment**: You should have the reusable workflow created in the previous lab that handles deployment to Azure. If not, please refer to the [Create Reusable Workflow](./../reusable-workflow/lab.md) to create it.
 2. **Azure Subscription and Service Principal**: You need an Azure subscription and a service principal to authenticate with Azure. The service principal should be stored as a GitHub secret.
 
 ---

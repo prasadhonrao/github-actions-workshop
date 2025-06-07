@@ -7,7 +7,7 @@ In this lab, you will use a shared GitHub Actions workflow to deploy an ASP.NET 
 ## Prerequisites
 
 1. **GitHub Repository**: A GitHub repository to store the workflow YAML files and use GitHub Actions.
-2. You should have shared workflow created as instructed in the [Creating a Shared Workflow Lab](./create-shared-workflow-lab.md).
+2. You should have shared workflow created as instructed in the [Creating a Shared Workflow Lab](./../shared-workflow/lab.md).
 3. **Azure Subscription and Service Principal**: You need an Azure subscription and a service principal to authenticate with Azure. The service principal should be stored as a GitHub secret.
 
 ---

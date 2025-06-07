@@ -206,9 +206,14 @@ data = [
         ""
     ),
     (
-        "[Introduction to Reusable Workflows](./labs/reusable-workflow/reusable-workflow-lab.md)", 
-        "[View Solution](./labs/reusable-workflow/reusable-workflow-solution.md)", 
+        "[Reusable Workflow - Echo](./labs/reusable-workflow/echo/lab.md)", 
+        "[View Solution](./labs/reusable-workflow/echo/solution.md)", 
         "[![Reusable Workflow Echo Caller](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/reusable-workflow-echo-caller.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/reusable-workflow-echo-caller.yml)"
+    ),
+    (
+        "[Reusable Workflow - Azure App Service Deploy](./labs/reusable-workflow/azure-app-service-deploy/lab.md)", 
+        "[View Solution](./labs/reusable-workflow/azure-app-service-deploy/solution.md)", 
+        "N/A", 
     ),
     (
         "",  # This row will be a blank row (no ID, no content)
@@ -216,19 +221,19 @@ data = [
         ""
     ),
     (
-        "[ASP.NET Web App Deploy to Azure](./labs/aspnet-webapp/deploy-to-azure-lab.md)", 
-        "[View Solution](./labs/aspnet-webapp/deploy-to-azure-solution.md)", 
+        "[ASP.NET Web App Deploy to Azure](./labs/aspnet-webapp/deploy-to-azure/lab.md)", 
+        "[View Solution](./labs/aspnet-webapp/deploy-to-azure/solution.md)", 
         "[![ASP.NET Web App Deploy to Azure](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-deploy-to-azure.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-deploy-to-azure.yml)"
     ),  
     (
-        "[Create Reusable Workflow](./labs/aspnet-webapp/create-reusable-workflow-lab.md)", 
-        "[View Solution](./labs/aspnet-webapp/create-reusable-workflow-solution.md)", 
-        "N/A", 
+        "[ASP.NET Web App Deploy to Azure Using Reusable Workflow](./labs/aspnet-webapp/deploy-to-azure/reusable-workflow/lab.md)", 
+        "[View Solution](./labs/aspnet-webapp/deploy-to-azure/reusable-workflow/solution.md)", 
+        "[![ASP.NET Web App Deploy using Reusable Workflow](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-deploy-to-azure-using-reusable-workflow.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-deploy-to-azure-using-reusable-workflow.yml)"
     ),
     (
-        "[ASP.NET Web App Deploy to Azure Using Reusable Workflow](./labs/aspnet-webapp/deploy-to-azure-reusable-workflow-lab.md)", 
-        "[View Solution](./labs/aspnet-webapp/deploy-to-azure-reusable-workflow-solution.md)", 
-        "[![ASP.NET Web App Deploy using Reusable Workflow](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-deploy-to-azure-using-reusable-workflow.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-deploy-to-azure-using-reusable-workflow.yml)"
+        "",  # This row will be a blank row (no ID, no content)
+        "",
+        ""
     ),    
     (
         "[Create Shared Workflow](./labs/aspnet-webapp/create-shared-workflow-lab.md)", 
