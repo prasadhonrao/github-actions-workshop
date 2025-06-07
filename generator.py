@@ -90,30 +90,15 @@ data = [
         "N/A"
     ),
     (
-        "[ASP.NET Web App Build Ubuntu Runner](./labs/aspnet-webapp/build-ubuntu-runner-lab.md)", 
-        "[View Solution](./labs/aspnet-webapp/build-ubuntu-runner-solution.md)", 
-        "[![ASP.NET Web App Build Ubuntu Runner](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-build-ubuntu-runner.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-build-ubuntu-runner.yml)"
+        "[ASP.NET Web App Build](./labs/aspnet-webapp/build/lab.md)", 
+        "[View Solution](./labs/aspnet-webapp/build/solution.md)", 
+        "[![ASP.NET Web App Build](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-build.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-build.yml)"
     ),    
     (
-        "[ASP.NET Web App Build Windows Runner](./labs/aspnet-webapp/build-windows-runner-lab.md)", 
-        "[View Solution](./labs/aspnet-webapp/build-windows-runner-solution.md)", 
-        "[![ASP.NET Web App Build Windows Runner](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-build-windows-runner.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-build-windows-runner.yml)"
-    ),    
-    (
-        "[ASP.NET Web App Build Mac Runner](./labs/aspnet-webapp/build-mac-runner-lab.md)", 
-        "[View Solution](./labs/aspnet-webapp/build-mac-runner-solution.md)", 
-        "[![ASP.NET Web App Build Mac Runner](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-build-mac-runner.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-build-mac-runner.yml)"
-    ),
-    (
-        "[Create Self Hosted Runner](./labs/create-self-hosted-runner-lab.md)", 
+        "[Create Self Hosted Runner](./labs/self-hosted-runner/lab.md)", 
         "N/A", 
         "N/A"
     ),
-    (
-        "[ASP.NET Web App Build Self Hosted Runner](./labs/aspnet-webapp/build-self-hosted-runner-lab.md)", 
-        "[View Solution](./labs/aspnet-webapp/build-self-hosted-runner-solution.md)", 
-        "[![ASP.NET Web App Build Self Hosted Runner](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-build-self-hosted-runner.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-build-self-hosted-runner.yml)"
-    ),    
     (
         "[ASP.NET Web App Upload Artifact](./labs/aspnet-webapp/upload-artifact-lab.md)", 
         "[View Solution](./labs/aspnet-webapp/upload-artifact-solution.md)", 

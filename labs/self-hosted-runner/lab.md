@@ -14,15 +14,15 @@ In this lab, you will learn how to set up a self-hosted runner for your GitHub r
 
 1. Go to your GitHub repository.
 
-   ![Open GitHub Repository](../images/self-hosted-runner/1.png)
+   ![Open GitHub Repository](./images/1.png)
 
 2. Click on the **"Actions"** tab.
 
-   ![Open Actions](../images/self-hosted-runner/2.png)
+   ![Open Actions](./images/2.png)
 
 3. Click on the **"Runners"** section in the left-hand navigation.
 
-   ![Self-Hosted Runners Section](../images/self-hosted-runner/3.png)
+   ![Self-Hosted Runners Section](./images/3.png)
 
 ---
 
@@ -30,11 +30,11 @@ In this lab, you will learn how to set up a self-hosted runner for your GitHub r
 
 1. Under the **Self-hosted runners** section, click on the **"Add Runner"** button.
 
-   ![Add Runner](../images/self-hosted-runner/3.png)
+   ![Add Runner](./images/3.png)
 
 2. Click on the **"New self-hosted runner"** button.
 
-   ![New Runner](../images/self-hosted-runner/4.png)
+   ![New Runner](./images/4.png)
 
 ---
 
@@ -43,7 +43,7 @@ In this lab, you will learn how to set up a self-hosted runner for your GitHub r
 1. On the **"Add a new self-hosted runner"** page, choose the operating system and architecture that matches your machine.
 2. Click on the **"Download"** button to download the appropriate runner package.
 
-   ![Download Runner](../images/self-hosted-runner/5.png)
+   ![Download Runner](./images/5.png)
 
 ---
 
@@ -55,7 +55,7 @@ In this lab, you will learn how to set up a self-hosted runner for your GitHub r
    - Running a setup script (e.g., `config.sh` on Linux/MacOS or `config.cmd` on Windows).
    - Adding the runner token provided by GitHub to authenticate.
 
-   ![Configure Runner](../images/self-hosted-runner/6.png)
+   ![Configure Runner](./images/6.png)
 
 2. Once the setup script completes successfully, start the runner using the provided command (e.g., `./run.sh` or `run.cmd`).
 
@@ -66,7 +66,7 @@ In this lab, you will learn how to set up a self-hosted runner for your GitHub r
 1. Return to the **"Runners"** section in the repository’s **Actions** tab.
 2. You should see your new self-hosted runner listed as **Online**.
 
-   ![Runner Configured](../images/self-hosted-runner/7.png)
+   ![Runner Configured](./image/7.png)
 
 ---
 

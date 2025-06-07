@@ -1,15 +1,19 @@
-name: ASP.NET Web App Build Ubuntu Runner
+name: ASP.NET Web App Build
 
 on:
   push:
     paths:
-      - '.github/workflows/aspnet-webapp-build.yml'
+      - '.github/workflows/aspnet-webapp-build-windows-runner.yml'
       - 'src/dotnet/WebApp/**'
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    # For Windows, use: runs-on: windows-latest
+    # For macOS, use: runs-on: macos-latest
+    # For self-hosted, use: runs-on: self-hosted
+    # For ARC Runner, use: runs-on: arc-runner-set
     defaults:
       run:
         working-directory: ./src/dotnet/WebApp
