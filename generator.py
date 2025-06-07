@@ -166,13 +166,13 @@ data = [
         ""
     ),        
     (
-        "[Run React Tic Tac Toe Using Docker](./labs/react-tic-tac-toe/run-react-tic-tac-toe-using-docker.md)", 
+        "[Run React Tic Tac Toe Using Docker](./labs/react-tic-tac-toe/run-using-docker.md)", 
         "N/A", 
         "N/A"
     ),
     (
-        "[React Tic Tac Toe CI/CD](./labs/react-tic-tac-toe/react-tic-tac-toe-ci-cd-lab.md)", 
-        "[View Solution](./labs/react-tic-tac-toe/react-tic-tac-toe-ci-cd-solution.md)", 
+        "[React Tic Tac Toe CI/CD](./labs/react-tic-tac-toe/lab.md)", 
+        "[View Solution](./labs/react-tic-tac-toe/solution.md)", 
         "[![React Tic-Tac-Toe CI/CD](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/react-tic-tac-toe-ci-cd.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/react-tic-tac-toe-ci-cd.yml)"
     ),
     (
