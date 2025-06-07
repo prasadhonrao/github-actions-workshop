@@ -85,6 +85,16 @@ data = [
         ""
     ),
     (
+        "[Create Self Hosted Runner](./labs/self-hosted-runner/lab.md)", 
+        "N/A", 
+        "N/A"
+    ),
+    (
+        "",  # This row will be a blank row (no ID, no content)
+        "",
+        ""
+    ),
+    (
         "[Create ASP.NET Web App](./labs/aspnet-webapp/create-webapp/lab.md)", 
         "N/A", 
         "N/A"
@@ -94,11 +104,7 @@ data = [
         "[View Solution](./labs/aspnet-webapp/build/solution.md)", 
         "[![ASP.NET Web App Build](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-build.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapp-build.yml)"
     ),    
-    (
-        "[Create Self Hosted Runner](./labs/self-hosted-runner/lab.md)", 
-        "N/A", 
-        "N/A"
-    ),
+    
     (
         "[ASP.NET Web App Upload Download Artifact](./labs/aspnet-webapp/upload-download-artifact/lab.md)", 
         "[View Solution](./labs/aspnet-webapp/upload-download-artifact/solution.md)", 
@@ -120,18 +126,18 @@ data = [
         "N/A"
     ),
     (
-        "[ASP.NET Web API Build](./labs/aspnet-webapi/build-lab.md)", 
-        "[View Solution](./labs/aspnet-webapi/build-solution.md)", 
+        "[ASP.NET Web API Build](./labs/aspnet-webapi/build/lab.md)", 
+        "[View Solution](./labs/aspnet-webapi/build/solution.md)", 
         "[![ASP.NET Web API Build](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapi-build.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapi-build.yml)"
     ),        
     (
-        "[Publish ASP.NET Web API as a Docker Image](./labs/aspnet-webapi/publish-docker-image-lab.md)", 
-        "[View Solution](./labs/aspnet-webapi/publish-docker-image-solution.md)", 
+        "[Publish ASP.NET Web API as a Docker Image](./labs/aspnet-webapi/publish-docker-image/lab.md)", 
+        "[View Solution](./labs/aspnet-webapi/publish-docker-image/solution.md)", 
         "[![ASP.NET Web API Publish Docker Image](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapi-publish-docker-image.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapi-publish-docker-image.yml)"
     ),        
     (
-        "[Publish ASP.NET Web API as a GitHub Package](./labs/aspnet-webapi/publish-github-package-lab.md)", 
-        "[View Solution](./labs/aspnet-webapi/publish-github-package-solution.md)", 
+        "[Publish ASP.NET Web API as a GitHub Package](./labs/aspnet-webapi/publish-github-package/lab.md)", 
+        "[View Solution](./labs/aspnet-webapi/publish-github-package/solution.md)", 
         "[![ASP.NET Web API Publish GitHub Package](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapi-publish-github-package.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/aspnet-webapi-publish-github-package.yml)"
     ),
     (
