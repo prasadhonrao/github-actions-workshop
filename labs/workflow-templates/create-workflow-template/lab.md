@@ -1,4 +1,4 @@
-## Lab: Create Workflow Templates
+## Lab: Create Workflow Template
 
 ## Introduction
 

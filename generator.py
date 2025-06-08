@@ -252,7 +252,7 @@ data = [
         ""
     ),
     (
-        "[Create Workflow Template](./labs/workflow-templates/create-workflow-templates-lab.md)", 
+        "[Create Workflow Template](./labs/workflow-templates/create-workflow-template/lab.md)", 
         "N/A", 
         "N/A", 
     ),    
