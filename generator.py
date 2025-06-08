@@ -272,7 +272,7 @@ data = [
         "[![Custom Action - Docker - Print Message](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/custom-action-docker-print-message.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/custom-action-docker-print-message.yml)", 
     ),    
     (
-        "[Composite Action - Composite - Print Message and Time](./labs/custom-actions/composite-actions/print-message-and-time/lab.md)", 
+        "[Custom Action - Composite - Print Message and Time](./labs/custom-actions/composite-actions/print-message-and-time/lab.md)", 
         "[View Solution](./labs/custom-actions/composite-actions/print-message-and-time/solution.md)", 
         "[![Custom Action - Composite - Print Message and Time](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/custom-action-composite-print-message-and-time.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/custom-action-composite-print-message-and-time.yml)", 
     ),
