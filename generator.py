@@ -45,21 +45,6 @@ data = [
         ""
     ),
     (
-        "[Disabling a Workflow](./labs/misc/disabling-a-workflow/lab.md)", 
-        "N/A", 
-        "N/A"
-    ),
-    (
-        "[Displaying Workflow Status Badge](./labs/misc/displaying-workflow-status-badge/lab.md)", 
-        "N/A", 
-        "N/A"
-    ),
-    (
-        "",  # This row will be a blank row (no ID, no content)
-        "",
-        ""
-    ),
-    (
         "[Environment Variables and Secrets](./labs/env-var-secrets/env-var-secrets/lab.md)", 
         "[View Solution](./labs/env-var-secrets/env-var-secrets/solution.md)", 
         "[![Environment Variables and Secrets](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/env-var-secrets.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/env-var-secrets.yml)"
@@ -297,18 +282,28 @@ data = [
         ""
     ),
     (
-        "[Misc - Git Cli Integration](./labs/misc/git-cli-integration-lab.md)", 
-        "[View Solution](./labs/misc/git-cli-integration-solution.md)", 
+        "[Misc - Disabling a Workflow](./labs/misc/disabling-a-workflow/lab.md)", 
+        "N/A", 
+        "N/A"
+    ),
+    (
+        "[Misc - Displaying Workflow Status Badge](./labs/misc/displaying-workflow-status-badge/lab.md)", 
+        "N/A", 
+        "N/A"
+    ),
+    (
+        "[Misc - Git Cli Integration](./labs/misc/git-cli-integration/lab.md)", 
+        "[View Solution](./labs/misc/git-cli-integration/solution.md)", 
         "[![Misc - Git CLI Integration](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/misc-git-cli-integration.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/misc-git-cli-integration.yml)", 
     ),    
     (
-        "[Misc - Auto Comment on New Issues](./labs/misc/auto-comment-on-new-issues-lab.md)", 
-        "[View Solution](./labs/misc/auto-comment-on-new-issues-solution.md)", 
+        "[Misc - Auto Comment on New Issues](./labs/misc/auto-comment/lab.md)", 
+        "[View Solution](./labs/misc/auto-comment/solution.md)", 
         "[![Misc - Auto Comment on New Issues](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/misc-auto-comment-on-new-issues.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/misc-auto-comment-on-new-issues.yml)", 
     ),
     (
-        "[Misc - Temp Folder Cleanup](./labs/misc/temp-folder-cleanup-lab.md)", 
-        "[View Solution](./labs/misc/temp-folder-cleanup-solution.md)", 
+        "[Misc - Temp Folder Cleanup](./labs/misc/temp-folder-cleanup/lab.md)", 
+        "[View Solution](./labs/misc/temp-folder-cleanup/solution.md)", 
         "[![Misc - Temp Folder Cleanup](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/misc-temp-folder-cleanup.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/misc-temp-folder-cleanup.yml)", 
     ),
     (
