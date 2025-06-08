@@ -284,12 +284,12 @@ data = [
     (
         "[Setup ARC Runner](./labs/k8s/setup-arc-runner/lab.md)", 
         "[View Solution](./labs/k8s/setup-arc-runner/solution.md)",
-        "[![K8s ARC Runner](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/k8s-arc-runner.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/k8s-arc-runner.yml)", 
+        "[![ARC Runner - Echo](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/arc-runner-echo.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/arc-runner-echo.yml)", 
     ),
     (
         "[NGINX Deployment Using ARC Runner](./labs/k8s/nginx-deployment/lab.md)", 
         "[View Solution](./labs/k8s/nginx-deployment/solution.md)",
-        "[![K8s ARC Runner NGINX](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/k8s-arc-runner-nginx.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/k8s-arc-runner-nginx.yml)", 
+        "[![ARC Runner - NGINX](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/arc-runner-nginx.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/arc-runner-nginx.yml)", 
     ),
     (
         "",  # This row will be a blank row (no ID, no content)
