@@ -22,11 +22,11 @@ runs:
     - name: Get current timestamp
       id: current_time
       run: |
-        echo "timestamp=$(date)" >> $GITHUB_ENV
+        echo "::set-output name=timestamp::$(date)"
       shell: bash
 
     # Step 3: Set the output from the timestamp
     - name: Set action output
       run: |
-        echo "timestamp=${{ env.timestamp }}"
+        echo "timestamp=${{ steps.current_time.outputs.timestamp }}" >> $GITHUB_OUTPUT
       shell: bash

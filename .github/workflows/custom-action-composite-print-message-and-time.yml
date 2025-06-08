@@ -20,6 +20,7 @@ jobs:
 
       # Use the composite action
       - name: Run the custom composite action
+        id: composite-action
         uses: ./.github/actions/print-message-and-time-composite-action
         with:
           message: 'Hello from Composite Action!'
