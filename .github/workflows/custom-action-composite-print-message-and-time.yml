@@ -1,10 +1,10 @@
-name: Custom Composite Action - Print Message and Time
+name: Custom Action - Composite - Print Message and Time
 
 on:
   push:
     paths:
       - '.github/actions/print-message-and-time-composite-action/**'
-      - '.github/workflows/custom-composite-action-print-message-and-time.yml'
+      - '.github/workflows/custom-action-composite-print-message-and-time.yml'
   workflow_dispatch:
 
 jobs:
