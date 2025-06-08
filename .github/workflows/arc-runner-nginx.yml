@@ -1,9 +1,9 @@
-name: K8s ARC Runner NGINX
+name: ARC Runner - NGINX
 
 on:
   push:
     paths:
-      - '.github/workflows/k8s-arc-runner-nginx.yml'
+      - '.github/workflows/arc-runner-nginx.yml'
   workflow_dispatch:
 
 jobs:

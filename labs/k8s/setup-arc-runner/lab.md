@@ -1,4 +1,4 @@
-## Lab: K8s ARC Runner
+## Lab: Setup ARC Runner
 
 ## Introduction
 
@@ -44,6 +44,7 @@ Make sure the following tools are installed:
 
    - Download and install Azure CLI from the [official website](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli).
    - Verify the installation:
+
      ```bash
      az version
      ```
@@ -51,17 +52,22 @@ Make sure the following tools are installed:
 2. **kubectl**
 
    - Install `kubectl` using the Azure CLI:
+
      ```bash
      az aks install-cli
      ```
+
    - Verify the installation:
+
      ```bash
      kubectl version --client
      ```
 
 3. **Helm**
+
    - Download Helm from the [Helm website](https://helm.sh/docs/intro/install/).
    - Verify the installation:
+
      ```bash
      helm version
      ```
@@ -104,9 +110,11 @@ Make sure the following tools are installed:
 
 5. **Verify the Cluster**:
    Ensure your cluster is accessible:
+
    ```bash
    kubectl get nodes
    ```
+
    You should see a list of the nodes in your AKS cluster.
 
 ---
@@ -262,17 +270,17 @@ Now that the **Actions Runner Controller** (ARC) is installed and your self-host
 
 1. **Create a GitHub Actions Workflow:**
 
-   You need to create a workflow that specifies your self-hosted runner as the execution environment for the job. In your GitHub repository, navigate to the `.github/workflows` directory and create a new YAML file (e.g., `k8s-arc-runner.yml`).
+   You need to create a workflow that specifies your self-hosted runner as the execution environment for the job. In your GitHub repository, navigate to the `.github/workflows` directory and create a new YAML file (e.g., `arc-runner-echo.yml`).
 
    Here's a sample workflow file that you can use:
 
    ```yaml
-   name: K8s ARC Runner
+   name: ARC Runner - Echo
 
    on:
    push:
      paths:
-       - '.github/workflows/k8s-arc-runner.yml'
+       - '.github/workflows/arc-runner-echo.yml'
    workflow_dispatch:
 
    jobs:
@@ -289,8 +297,8 @@ Now that the **Actions Runner Controller** (ARC) is installed and your self-host
    After creating the workflow file, commit and push the changes to the repository.
 
    ```bash
-   git add .github/workflows/k8s-arc-runner.yml
-   git commit -m "Add workflow to use self-hosted runner"
+   git add .
+   git commit -m "Add workflow to use arc-runner-set"
    git push origin main
    ```
 

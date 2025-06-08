@@ -1,9 +1,9 @@
-name: K8s ARC Runner
+name: ARC Runner - Echo
 
 on:
   push:
     paths:
-      - '.github/workflows/k8s-arc-runner.yml'
+      - '.github/workflows/arc-runner-echo.yml'
   workflow_dispatch:
 
 jobs:
