@@ -1,32 +1,35 @@
 ## Solution: Create and Run a Custom Composite Action to Print a Message and the Current Time
 
 ```yaml
-name: "Print Message and Time"
-description: "Prints a custom message and the current date/time"
-author: "Your Name"
-inputs:
-  message:
-    description: "The message to print"
-    required: true
-    default: "Hello, GitHub Actions!"
-outputs:
-  timestamp:
-    description: "The current date and time"
-runs:
-  using: "composite"
-  steps:
-    # Step 1: Print the input message
-    - name: Print the message
-      run: echo "Message: ${{ inputs.message }}"
+name: Custom Action - Composite - Print Message and Time
 
-    # Step 2: Capture and output the current time
-    - name: Get current timestamp
-      id: current_time
-      run: echo "timestamp=$(date)" >> $GITHUB_ENV
+on:
+  push:
+    paths:
+      - '.github/actions/print-message-and-time-composite-action/**'
+      - '.github/workflows/custom-action-composite-print-message-and-time.yml'
+  workflow_dispatch:
 
-    # Step 3: Set the output from the timestamp
-    - name: Set action output
-      run: echo "timestamp=${{ env.timestamp }}"
-      shell: bash
+jobs:
+  test-composite-action:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v4.1.7
 
+      - name: List the files in print-message-and-time-composite-action directory
+        run: ls -R .github/actions/print-message-and-time-composite-action
+
+      # Use the composite action
+      - name: Run the custom composite action
+        id: composite-action
+        uses: ./.github/actions/print-message-and-time-composite-action
+        with:
+          message: 'Hello from Composite Action!'
+
+      # Access the output of the composite action
+      - name: Print the timestamp
+        run: |
+          echo "The timestamp is: ${{ steps.composite-action.outputs.timestamp }}"
 ```

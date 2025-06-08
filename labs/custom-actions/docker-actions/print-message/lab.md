@@ -153,12 +153,13 @@ Now that you have created the custom Docker action, you need to create a workflo
 2. Create a new file called `docker-action.yml` in `.github/workflows` with the following content:
 
 ```yaml
-name: Run Hello Docker Action
+name: Custom Action - Docker - Print Message
 
 on:
   push:
     paths:
-      - '.github/actions/hello-docker/**'
+      - '.github/actions/print-message-container-action/**'
+      - '.github/workflows/custom-action-docker-print-message.yml'
   workflow_dispatch:
 
 jobs:
@@ -170,9 +171,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run Hello Docker Action
-        uses: ./.github/actions/hello-docker
+        uses: ./.github/actions/print-message-container-action
         with:
-          message: 'This is a custom message from the workflow!'
+          message: '**** GitHub Actions is Awesome! ****'
 ```
 
 This workflow:

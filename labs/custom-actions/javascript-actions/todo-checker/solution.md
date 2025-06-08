@@ -1,10 +1,14 @@
 ## Solution: Create and Run a Custom JavaScript Action to Check TODO Comments in Code
 
 ```yaml
-name: Custom JavaScript Action - TODO Checker
+name: Custom Action - JavaScript - TODO Checker
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - '.github/actions/todo-checker-javascript-action/**'
+      - '.github/workflows/custom-action-javascript-todo-checker.yml'
 
 jobs:
   check-todos:
