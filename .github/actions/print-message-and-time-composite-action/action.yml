@@ -9,6 +9,7 @@ inputs:
 outputs:
   timestamp:
     description: 'The current date and time'
+    value: ${{ steps.current_time.outputs.timestamp }}
 runs:
   using: 'composite'
   steps:
@@ -23,10 +24,4 @@ runs:
       id: current_time
       run: |
         echo "timestamp=$(date)" >> $GITHUB_OUTPUT
-      shell: bash
-
-    # Step 3: Set the output from the timestamp
-    - name: Set action output
-      run: |
-        echo "timestamp=${{ steps.current_time.outputs.timestamp }}" >> $GITHUB_OUTPUT
       shell: bash
