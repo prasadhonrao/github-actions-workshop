@@ -22,7 +22,7 @@ runs:
     - name: Get current timestamp
       id: current_time
       run: |
-        echo "::set-output name=timestamp::$(date)"
+        echo "timestamp=$(date)" >> $GITHUB_OUTPUT
       shell: bash
 
     # Step 3: Set the output from the timestamp
