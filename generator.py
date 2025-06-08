@@ -262,19 +262,19 @@ data = [
         ""
     ),    
     (
-        "[Custom JavaScript Action - ToDo Checker](./labs/custom-actions/javascript-actions/todo-checker/lab.md)", 
+        "[Custom Action - JavaScript - ToDo Checker](./labs/custom-actions/javascript-actions/todo-checker/lab.md)", 
         "[View Solution](./labs/custom-actions/javascript-actions/todo-checker/solution.md)", 
-        "[![Custom JavaScript Action - TODO Checker](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/custom-javascript-action-todo-checker.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/custom-javascript-action-todo-checker.yml)", 
+        "[![Custom Action - JavaScript - TODO Checker](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/custom-action-javascript-todo-checker.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/custom-action-javascript-todo-checker.yml)", 
     ),    
     (
-        "[Custom Docker Action - Print Message](./labs/custom-actions/docker-actions/print-message/lab.md)", 
+        "[Custom Action - Docker - Print Message](./labs/custom-actions/docker-actions/print-message/lab.md)", 
         "[View Solution](./labs/custom-actions/docker-actions/print-message/solution.md)", 
-        "[![Custom Docker Action - Print Message](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/custom-container-action-print-message.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/custom-container-action-print-message.yml)", 
+        "[![Custom Action - Docker - Print Message](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/custom-action-docker-print-message.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/custom-action-docker-print-message.yml)", 
     ),    
     (
-        "[Composite Action - Print Message and Time](./labs/custom-actions/print-message-and-time-composite-action-lab.md)", 
-        "[View Solution](./labs/custom-actions/print-message-and-time-composite-action-solution.md)", 
-        "[![Custom Composite Action - Print Message and Time](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/custom-composite-action-print-message-and-time.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/custom-composite-action-print-message-and-time.yml)", 
+        "[Composite Action - Composite - Print Message and Time](./labs/custom-actions/composite-actions/print-message-and-time/lab.md)", 
+        "[View Solution](./labs/custom-actions/composite-actions/print-message-and-time/solution.md)", 
+        "[![Custom Action - Composite - Print Message and Time](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/custom-action-composite-print-message-and-time.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/custom-action-composite-print-message-and-time.yml)", 
     ),
     (
         "",  # This row will be a blank row (no ID, no content)
