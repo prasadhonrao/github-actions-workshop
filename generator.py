@@ -155,6 +155,21 @@ data = [
         "",  # This row will be a blank row (no ID, no content)
         "",
         ""
+    ),
+    (
+        "[Express Server without cache](./labs/caching/lab.md)", 
+        "[View Solution](./labs/caching/solution-no-cache.md)", 
+        "[![Express Server without cache](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/express-server-without-cache.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/express-server-without-cache.yml)"
+    ), 
+    (
+        "[Express Server with cache](./labs/caching/lab.md)", 
+        "[View Solution](./labs/caching/solution-with-cache.md)", 
+        "[![Express Server with cache](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/express-server-with-cache.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/express-server-with-cache.yml)"
+    ), 
+    (
+        "",  # This row will be a blank row (no ID, no content)
+        "",
+        ""
     ),        
     (
         "[Run React Tic Tac Toe Using Docker](./labs/react-tic-tac-toe/run-using-docker.md)", 
