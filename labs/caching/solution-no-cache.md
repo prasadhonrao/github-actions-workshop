@@ -1,7 +1,7 @@
-## Solution: No Cache
+## Solution: Express Server No Cache
 
 ```yaml
-name: Node.js CI without cache
+name: Express Server without cache
 
 on:
   workflow_dispatch:
