@@ -102,7 +102,7 @@ jobs:
 2. Commit and push it to the `main` branch:
 
    ```bash
-   git add .github/workflows/deploy.yml
+   git add .github/workflows/env-deployment-protection-rule.yml
    git commit -m "Add deployment workflow with protection rule"
    git push origin main
    ```
