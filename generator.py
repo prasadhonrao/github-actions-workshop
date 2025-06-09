@@ -35,6 +35,11 @@ data = [
         "[![Intro - Scheduled Workflow](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-scheduled-workflow.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-scheduled-workflow.yml)"
     ),
     (
+        "[Repository Dispatch Trigger](./labs/intro/repository-dispatch-trigger/lab.md)", 
+        "[View Solution](./labs/intro/repository-dispatch-trigger/solution.md)", 
+        "[![Repository Dispatch Trigger Workflow](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/repository-dispatch-trigger-workflow.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/repository-dispatch-trigger-workflow.yml)"
+    ),
+    (
         "[YAML Syntax](./labs/intro/yaml-syntax/lab.md)", 
         "[View Solution](./labs/intro/yaml-syntax/solution.md)", 
         "[![Intro - YAML Syntax](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-yaml-syntax.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-yaml-syntax.yml)"
