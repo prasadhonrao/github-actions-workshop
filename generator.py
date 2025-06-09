@@ -37,7 +37,7 @@ data = [
     (
         "[Repository Dispatch Trigger](./labs/intro/repository-dispatch-trigger/lab.md)", 
         "[View Solution](./labs/intro/repository-dispatch-trigger/solution.md)", 
-        "[![Repository Dispatch Trigger Workflow](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/repository-dispatch-trigger-workflow.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/repository-dispatch-trigger-workflow.yml)"
+        "[![Intro - Repository Dispatch Trigger Workflow](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-repository-dispatch-trigger-workflow.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-repository-dispatch-trigger-workflow.yml)"
     ),
     (
         "[YAML Syntax](./labs/intro/yaml-syntax/lab.md)", 
