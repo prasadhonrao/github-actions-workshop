@@ -14,7 +14,7 @@ In this lab, you will create a simple GitHub Actions workflow from scratch that 
 
 1. Navigate to the repository you created in the previous lab.
 
-   - If you haven’t completed the previous lab, clone the template repository by following the [instructions to clone the template repository](./../../create-repository-using-template-repository-lab.md).
+   - If you haven’t completed the previous lab, clone the template repository by following the [instructions to clone the template repository](../template-repository/lab.md).
 
 ### Step 2: Create the workflow from scratch
 

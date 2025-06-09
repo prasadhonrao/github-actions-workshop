@@ -13,7 +13,7 @@ In this lab, you will create a manual workflow that can be triggered manually. T
 ### Step 1: Set up your repository
 
 1. Navigate to the repository you created in the previous lab.
-   - If you haven’t completed the previous lab, clone the template repository by following the instructions [here](./create-repository-using-template-repository-lab.md).
+   - If you haven’t completed the previous lab, clone the template repository by following the instructions in the [Create Repository Using Template Repository Lab](../template-repository/lab.md).
 
 ### Step 2: Create the manual workflow
 

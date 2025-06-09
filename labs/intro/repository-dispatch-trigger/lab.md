@@ -14,7 +14,7 @@ In this lab, you will create a GitHub Actions workflow that is triggered by an H
 
 1. Navigate to the repository where you have workflow permissions.
 
-   - You can use your existing repository or [clone a template repository](./../../create-repository-using-template-repository-lab.md) if you don't already have one.
+   - You can use your existing repository or [clone a template repository](../template-repository/lab.md) if you don't already have one.
 
 2. Make sure you have a **Personal Access Token (PAT)**. Use following steps to create one:
 
