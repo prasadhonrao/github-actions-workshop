@@ -10,11 +10,13 @@ In this lab, you will learn how to set environment variables at different scopes
 
 ## Instructions
 
-### Step 1: Create a YAML Workflow Using the Starter File
+### Step 1: Create a YAML Workflow File
 
-1. Navigate to the [**Environment Variable Scope Starter File**](./env-var-scope-starter.md).
+1. In your repository, create a directory `.github/workflows` if it doesn't exist.
 
-2. Copy the content of the starter file:
+2. Inside `.github/workflows`, create a new file named `env-var-scope.yml`.
+
+3. Add the following initial content to the file:
 
    ```yaml
    name: Env Var Scope
@@ -26,98 +28,72 @@ In this lab, you will learn how to set environment variables at different scopes
          - '.github/workflows/env-var-scope.yml'
    ```
 
-3. In your repository, create a new workflow file under `.github/workflows` and name it `env-var-scope.yml`.
-
-4. Paste the copied content into the new file.
-
-5. Commit the workflow file to the `main` branch.
+4. Commit the file to the `main` branch.
 
 ---
 
 ### Step 2: Add Environment Variable at Workflow Level
 
-1. In the `env-var-scope.yml` file, define a new environment variable at the **workflow level** with the name `WORKFLOW_ENV_VAR` and the value `Workflow Environment Variable`.
+1. Edit `env-var-scope.yml` and add a workflow-level environment variable called `WORKFLOW_ENV_VAR` with the value `Workflow Environment Variable`:
+
+   ```yaml
+   env:
+     WORKFLOW_ENV_VAR: 'Workflow Environment Variable'
+   ```
 
 ---
 
 ### Step 3: Update the Workflow to Access and Print Environment Variables
 
-1. Add a **job** to your workflow with the name `print`.
+1. Add a job named `print` that runs on `ubuntu-latest`.
+2. Define a job-level environment variable `JOB_ENV_VAR` with value `Job Environment Variable`.
+3. Add a step in the job where you define a step-level environment variable `STEP_ENV_VAR` with value `Step Environment Variable`.
+4. Print the values of all three environment variables (`WORKFLOW_ENV_VAR`, `JOB_ENV_VAR`, and `STEP_ENV_VAR`).
 
-2. Inside the `print` job, define the **job-level** environment variable `JOB_ENV_VAR` and assign it the value `Job Environment Variable`.
+The final workflow should look like this:
 
-   ```yaml
-   jobs:
-     print:
-       runs-on: ubuntu-latest
-       env:
-         JOB_ENV_VAR: 'Job Environment Variable'
-   ```
+```yaml
+name: Env Var Scope
 
-3. Add a **step** inside the `print` job and define the **step-level** environment variable `STEP_ENV_VAR` with the value `Step Environment Variable`.
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/env-var-scope.yml'
 
-4. In the step, print the values of the environment variables: `WORKFLOW_ENV_VAR`, `JOB_ENV_VAR`, and `STEP_ENV_VAR`.
+env:
+  WORKFLOW_ENV_VAR: 'Workflow Environment Variable'
 
-   The final workflow should look like this:
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    env:
+      JOB_ENV_VAR: 'Job Environment Variable'
 
-   ```yaml
-   steps:
-     - name: Display Environment Variables
-       env:
-         STEP_ENV_VAR: 'Step Environment Variable'
-       run: |
-         echo "WORKFLOW_ENV_VAR: $WORKFLOW_ENV_VAR"
-         echo "JOB_ENV_VAR: $JOB_ENV_VAR"
-         echo "STEP_ENV_VAR: $STEP_ENV_VAR"
-   ```
-
-5. Final workflow should look like this:
-
-   ```yaml
-   name: Env Var Scope
-
-   on:
-     workflow_dispatch:
-     push:
-       paths:
-         - '.github/workflows/env-var-scope.yml'
-
-   env:
-     WORKFLOW_ENV_VAR: 'Workflow Environment Variable'
-
-   jobs:
-     print:
-       runs-on: ubuntu-latest
-       env:
-         JOB_ENV_VAR: 'Job Environment Variable'
-
-       steps:
-         - name: Display Environment Variables
-           env:
-             STEP_ENV_VAR: 'Step Environment Variable'
-           run: |
-             echo "WORKFLOW_ENV_VAR: $WORKFLOW_ENV_VAR"
-             echo "JOB_ENV_VAR: $JOB_ENV_VAR"
-             echo "STEP_ENV_VAR: $STEP_ENV_VAR"
-   ```
+    steps:
+      - name: Display Environment Variables
+        env:
+          STEP_ENV_VAR: 'Step Environment Variable'
+        run: |
+          echo "WORKFLOW_ENV_VAR: $WORKFLOW_ENV_VAR"
+          echo "JOB_ENV_VAR: $JOB_ENV_VAR"
+          echo "STEP_ENV_VAR: $STEP_ENV_VAR"
+```
 
 ---
 
 ### Step 4: Commit and Run the Workflow
 
 1. Commit the changes to the `main` branch.
-
-2. Go to the **Actions** tab in your repository and locate the **Env Var Scope** workflow.
-
-3. Trigger the workflow manually by clicking on the **Run workflow** button.
-
-4. Once the workflow runs, check the logs to see the printed values of the environment variables.
+2. In GitHub, go to the **Actions** tab and select the **Env Var Scope** workflow.
+3. Click **Run workflow** and choose the `main` branch.
+4. After the workflow runs, review the logs to see the printed environment variable values.
 
 ---
 
 ## Summary
 
-Congratulations! You have successfully defined environment variables at different scopes (workflow, job, and step levels) and accessed them in your workflow. You've also learned how to print their values during the execution of the workflow.
+Congratulations! You have successfully defined environment variables at different scopes (workflow, job, and step levels) and accessed them in your workflow. You have also learned how to print their values during workflow execution.
 
 ---
 
