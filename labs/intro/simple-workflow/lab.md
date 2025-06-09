@@ -14,23 +14,23 @@ In this lab, you will use the **Simple Workflow** built-in template to create a 
 
 1. Open the repository you created in the previous lab.
 
-   ![Navigate to Repository](../../images/simple-workflow/1.png)
+   ![Navigate to Repository](./images/1.png)
 
 ### Step 2: Open the Actions Tab
 
 1. Click on the **Actions** tab in your repository.
 
-   ![Navigate to Actions](../../images/simple-workflow/2.png)
+   ![Navigate to Actions](./images/2.png)
 
 ### Step 3: Create a New Workflow
 
 1. Click on the **New workflow** button.
 
-   ![New Workflow](../images/../simple-workflow/3.png)
+   ![New Workflow](./images/3.png)
 
 2. Select the **Simple workflow** template and click **Configure**.
 
-   ![Select Simple Workflow](../../images/simple-workflow/4.png)
+   ![Select Simple Workflow](./images/4.png)
 
 ### Step 4: Save the Workflow
 
@@ -38,11 +38,11 @@ In this lab, you will use the **Simple Workflow** built-in template to create a 
 
 2. Click **Commit changes...** to save the workflow.
 
-   ![Enter Workflow Name](../../images/simple-workflow/5.png)
+   ![Enter Workflow Name](./images/5.png)
 
 3. This will create the file `.github/workflows/simple-workflow.yml` in your repository.
 
-   ![Workflow Created](../../images/simple-workflow/6.png)
+   ![Workflow Created](./images/6.png)
 
 ---
 
@@ -120,15 +120,15 @@ jobs:
 
 1. Return to the **Actions** tab. You should see the workflow listed.
 
-   ![Workflow List](../../images/simple-workflow/7.png)
+   ![Workflow List](./images/7.png)
 
 2. Click on **Run workflow**, select the `main` branch, and then click **Run workflow**.
 
-   ![Run Workflow](../../images/simple-workflow/8.png)
+   ![Run Workflow](./images/8.png)
 
 3. The workflow will begin running. Click on the workflow run to view its details.
 
-   ![Workflow Run](../../images/simple-workflow/9.png)
+   ![Workflow Run](./images/9.png)
 
 ### Step 6: Inspect the Workflow Run
 

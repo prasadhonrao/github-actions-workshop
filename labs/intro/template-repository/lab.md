@@ -12,23 +12,23 @@ In this lab, you will create a new repository using the `GitHub Actions Workshop
 
 2. Go to [GitHub Actions Workshop Template Repository](https://github.com/prasadhonrao/github-actions-workshop)
 
-   ![Navigate to Template Repository](../images/template-repository/1.png)
+   ![Navigate to Template Repository](./images/1.png)
 
 3. Click on `Use this template` button and select 'Create a new repository' option.
 
-   ![Use This Template](../images/template-repository/2.png)
+   ![Use This Template](./images/2.png)
 
 4. Enter the repository name and description
 
-   ![Enter Repository Name](../images/template-repository/3.png)
+   ![Enter Repository Name](./images/3.png)
 
 5. This will display 'Generating your repository' message
 
-   ![Generating Repository](../images/template-repository/4.png)
+   ![Generating Repository](./images/4.png)
 
 6. Once the repository is created, you will see the repository page
 
-   ![Repository Created](../images/template-repository/5.png)
+   ![Repository Created](./images/5.png)
 
 7. Your repository now contains all the necessary files to get started with GitHub Actions.
 
