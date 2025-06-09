@@ -2,7 +2,9 @@ name: Express Server without cache
 
 on:
   workflow_dispatch:
-
+  push:
+    paths:
+      - 'src/javascript/express-hello-world/**'
 jobs:
   build:
     runs-on: ubuntu-latest
