@@ -66,7 +66,7 @@ In this lab, you will learn how to set up a self-hosted runner for your GitHub r
 1. Return to the **"Runners"** section in the repository’s **Actions** tab.
 2. You should see your new self-hosted runner listed as **Online**.
 
-   ![Runner Configured](./image/7.png)
+   ![Runner Configured](./images/7.png)
 
 ---
 
