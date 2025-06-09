@@ -1,6 +1,6 @@
 data = [
     (
-        "[Create Repository Using Template Repository](./labs/template-repository/lab.md)", 
+        "[Create Repository Using Template Repository](./labs/intro/template-repository/lab.md)", 
         "N/A", 
         "N/A"
     ),
