@@ -1,0 +1,12 @@
+name: Event - Star Event Triggered Workflow
+
+on:
+  repository_dispatch:
+    types: [starred-repo]
+
+jobs:
+  run-on-star:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Respond to star
+        run: echo "⭐️ This repository was just starred by ${{ github.actor }}!"
