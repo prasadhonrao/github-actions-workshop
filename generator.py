@@ -15,6 +15,11 @@ data = [
         "[![Intro - Manual Workflow](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-hello-world-workflow.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-hello-world-workflow.yml)"
     ),
     (
+        "[Learn GitHub Actions](./labs/intro/learn-github-actions/lab.md)", 
+        "[View Solution](./labs/intro/learn-github-actions/solution.md)", 
+        "[![Intro - Learn GitHub Actions](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-learn-github-actions.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-learn-github-actions.yml)"
+    ),
+    (
         "[Manual Workflow](./labs/intro/manual-workflow/lab.md)", 
         "[View Solution](./labs/intro/manual-workflow/solution.md)", 
         "[![Intro - Manual Workflow](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-manual-workflow.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/intro-manual-workflow.yml)"

@@ -1,0 +1,24 @@
+## Solution: Learn GitHub Actions
+
+```yaml
+name: Intro - Learn GitHub Actions
+
+run-name: ${{ github.actor }} is learning GitHub Actions
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [trigger-from-api]
+
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Bats
+        run: sudo apt-get update && sudo apt-get install -y bats
+
+      - name: Check Bats Version
+        run: bats --version
+```
