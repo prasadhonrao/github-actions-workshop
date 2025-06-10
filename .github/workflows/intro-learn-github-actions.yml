@@ -1,0 +1,16 @@
+name: Intro - Learn GitHub Actions
+
+run-name: ${{ github.actor }} is learning GitHub Actions
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [trigger-from-api]
+
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check Bats Version
+        run: bats --version
