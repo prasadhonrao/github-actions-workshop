@@ -14,7 +14,7 @@ In this lab, you will learn how to disable a workflow in a GitHub repository. Th
 
 1. Open your browser and go to your **GitHub repository** where the workflow is located.
 
-   ![Open GitHub Repository](../../images/disabling-a-workflow/1.png)
+   ![Open GitHub Repository](./images/1.png)
 
 ---
 
@@ -22,7 +22,7 @@ In this lab, you will learn how to disable a workflow in a GitHub repository. Th
 
 1. Once in your repository, click on the **Actions** tab at the top of the page.
 
-   ![Open Actions](../../images/disabling-a-workflow/2.png)
+   ![Open Actions](./images/2.png)
 
 ---
 
@@ -31,7 +31,7 @@ In this lab, you will learn how to disable a workflow in a GitHub repository. Th
 1. In the **Actions** tab, you will see a list of workflows that have run in your repository.
 2. Click on the workflow you want to disable.
 
-   ![Disable Workflow](../../images/disabling-a-workflow/3.png)
+   ![Disable Workflow](./images/3.png)
 
 ---
 
@@ -40,7 +40,7 @@ In this lab, you will learn how to disable a workflow in a GitHub repository. Th
 1. After selecting the workflow, click on the **Ellipsis (three-dot)** icon on the right-hand side of the page.
 2. From the dropdown menu, click on **Disable workflow**.
 
-   ![Disable Workflow](../../images/disabling-a-workflow/4.png)
+   ![Disable Workflow](./images/4.png)
 
 ---
 
@@ -48,7 +48,7 @@ In this lab, you will learn how to disable a workflow in a GitHub repository. Th
 
 1. Once the workflow is disabled, you will see a confirmation message indicating that the workflow has been disabled.
 
-   ![Workflow Disabled](../../images/disabling-a-workflow/5.png)
+   ![Workflow Disabled](./images/5.png)
 
 ---
 
@@ -57,7 +57,7 @@ In this lab, you will learn how to disable a workflow in a GitHub repository. Th
 1. After disabling the workflow, it will not trigger automatically when the specified events occur.
 2. To confirm, try pushing a change or triggering the event the workflow was tied to. You should see that the workflow does not run.
 
-   ![Workflow Disabled](../../images/disabling-a-workflow/6.png)
+   ![Workflow Disabled](./images/6.png)
 
 ---
 
@@ -68,7 +68,7 @@ In this lab, you will learn how to disable a workflow in a GitHub repository. Th
 
 3. You will see a confirmation message indicating that the workflow is now enabled and will run again when the specified events occur.
 
-   ![Enable Workflow](../../images/disabling-a-workflow/7.png)
+   ![Enable Workflow](./images/7.png)
 
 ---
 
