@@ -1,3 +1,6 @@
+## Solution: Runner - Self Hosted
+
+```yaml
 name: Runner - Self Hosted
 
 on: workflow_dispatch
@@ -10,3 +13,4 @@ jobs:
       - name: Display OS Information
         run: |
           systeminfo
+```

@@ -55,6 +55,36 @@ data = [
         ""
     ),
     (
+        "[Runner - Ubuntu Latest](./labs/runners/ubuntu-latest/lab.md)", 
+        "[View Solution](./labs/runners/ubuntu-latest/solution.md)", 
+        "[![Runner - Ubuntu Latest](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/runner-ubuntu-latest.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/runner-ubuntu-latest.yml)"
+    ),
+    (
+        "[Runner - Windows Latest](./labs/runners/windows-latest/lab.md)", 
+        "[View Solution](./labs/runners/windows-latest/solution.md)", 
+        "[![Runner - Windows Latest](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/runner-windows-latest.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/runner-windows-latest.yml)"
+    ),
+    (
+        "[Runner - MacOS Latest](./labs/runners/macos-latest/lab.md)", 
+        "[View Solution](./labs/runners/macos-latest/solution.md)", 
+        "[![Runner - MacOS Latest](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/runner-macos-latest.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/runner-macos-latest.yml)"
+    ),
+    (
+        "[Create Self Hosted Runner](./labs/runners/create-self-hosted-runner/lab.md)", 
+        "N/A", 
+        "N/A"
+    ),
+    (
+        "[Runner - Self Hosted](./labs/runner/self-hosted/lab.md)", 
+        "[View Solution](./labs/runner/self-hosted/solution.md)", 
+        "[![Runner - Self Hosted](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/runner-self-hosted.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/runner-self-hosted.yml)"
+    ),
+    (
+        "",  # This row will be a blank row (no ID, no content)
+        "",
+        ""
+    ),
+    (
         "[Environment Variables and Secrets](./labs/env-var-secrets/env-var-secrets/lab.md)", 
         "[View Solution](./labs/env-var-secrets/env-var-secrets/solution.md)", 
         "[![Environment Variables and Secrets](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/env-var-secrets.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/env-var-secrets.yml)"
@@ -74,16 +104,7 @@ data = [
         "[View Solution](./labs/env-var-secrets/deployment-protection-rule/solution.md)", 
         "[![Env - Deployment Protection Rule](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/env-deployment-protection-rule.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/env-deployment-protection-rule.yml)"
     ),
-    (
-        "",  # This row will be a blank row (no ID, no content)
-        "",
-        ""
-    ),
-    (
-        "[Create Self Hosted Runner](./labs/self-hosted-runner/lab.md)", 
-        "N/A", 
-        "N/A"
-    ),
+    
     (
         "",  # This row will be a blank row (no ID, no content)
         "",
