@@ -7,3 +7,6 @@ jobs:
     runs-on: self-hosted
     steps:
       - run: echo "This is a message from self hosted runner"
+      - name: Display OS Information
+        run: |
+          uname -a

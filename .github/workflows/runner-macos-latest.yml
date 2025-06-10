@@ -7,3 +7,6 @@ jobs:
     runs-on: macos-latest
     steps:
       - run: echo "This is a message from MacOS latest runner"
+      - name: Display OS Information
+        run: |
+          system_profiler SPSoftwareDataType
