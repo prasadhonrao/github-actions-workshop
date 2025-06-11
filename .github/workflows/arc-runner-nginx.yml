@@ -24,7 +24,7 @@ jobs:
       - name: Configure kubectl
         uses: azure/aks-set-context@v1
         with:
-          resource-group: 'rg-github-actions-workshop'
+          resource-group: 'arc-lab-rg'
           cluster-name: 'arc-lab-cluster'
           creds: ${{ secrets.AZURE_SERVICE_PRINCIPAL }}
 
