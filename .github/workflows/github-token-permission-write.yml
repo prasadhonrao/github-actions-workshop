@@ -1,0 +1,21 @@
+name: GitHub Token Permission - Write
+
+on:
+  workflow_dispatch:
+
+permissions:
+  issues: write # 👈 Required to create issues
+
+jobs:
+  create-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create an issue using GITHUB_TOKEN
+        run: |
+          curl -X POST https://api.github.com/repos/${{ github.repository }}/issues \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            -d '{
+              "title": "🔔 Test issue from GitHub Actions",
+              "body": "This issue was created by a GitHub Actions workflow to demonstrate token permissions."
+            }'
