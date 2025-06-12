@@ -1,0 +1,22 @@
+name: GitHub Token Permission - Missing Scope
+
+on:
+  workflow_dispatch:
+
+# No permissions explicitly defined
+# Defaults to read-only (or none in private repos)
+# permissions: {}
+
+jobs:
+  fail-to-create-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Attempt to create an issue (should fail)
+        run: |
+          curl -i -X POST https://api.github.com/repos/${{ github.repository }}/issues \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            -d '{
+              "title": "🚫 This should fail",
+              "body": "This request lacks permissions and should be denied."
+            }'
