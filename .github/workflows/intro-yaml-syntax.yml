@@ -36,5 +36,3 @@ jobs:
     steps:
       - run: echo "This job will run last, after all other jobs have completed."
       - run: echo "The workflow is now complete!"
-      - name: Adding Markdown
-        run: echo "### YAML Syntax Example Completed! :rocket:" >> "$GITHUB_STEP_SUMMARY"
