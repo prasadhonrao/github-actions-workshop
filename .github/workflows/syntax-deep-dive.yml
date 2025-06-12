@@ -28,7 +28,7 @@ jobs:
       - name: Set up a local container
         uses: addnab/docker-run-action@v3
         with:
-          image: hello-world:latest
+          image: alpine:latest
           options: --cpus 1
           run: |
             echo "jsonString=$(echo '${{ toJSON(env) }}')" >> $GITHUB_OUTPUT
