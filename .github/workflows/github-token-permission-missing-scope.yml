@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Attempt to create an issue (should fail)
         run: |
-          curl -i -X POST https://api.github.com/repos/${{ github.repository }}/issues \
+          curl -f -X POST https://api.github.com/repos/${{ github.repository }}/issues \
             -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
             -H "Accept: application/vnd.github.v3+json" \
             -d '{
