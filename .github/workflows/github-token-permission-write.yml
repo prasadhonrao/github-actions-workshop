@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  issues: read # 👈 Required to create issues
+  issues: write # 👈 Required to create issues
 
 jobs:
   create-issue:
