@@ -5,7 +5,7 @@ on:
 
 # No permissions explicitly defined
 # Defaults to read-only (or none in private repos)
-# permissions: {}
+permissions: {}
 
 jobs:
   fail-to-create-issue:
