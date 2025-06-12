@@ -1,0 +1,79 @@
+name: Syntax Deep Dive
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+env:
+  GLOBAL_ENV_VAR: 'global-value'
+
+defaults:
+  run:
+    shell: bash
+    working-directory: ./scripts
+
+concurrency:
+  group: feature-demo-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      encoded: ${{ steps.encode.outputs.jsonString }}
+    steps:
+      - name: Set up a local container
+        uses: addnab/docker-run-action@v3
+        with:
+          image: node:20
+          options: --cpus 1
+          run: |
+            echo "jsonString=$(echo '${{ toJSON(env) }}')" >> $GITHUB_OUTPUT
+        id: encode
+
+  test:
+    needs: setup
+    runs-on: ubuntu-latest
+    env:
+      JOB_LEVEL_VAR: 'job-value'
+    if: ${{ contains(github.ref, 'main') || startsWith(github.ref, 'refs/heads/feature/') }}
+    timeout-minutes: 3
+    steps:
+      - name: Show combined ENV
+        run: |
+          echo "Global: $GLOBAL_ENV_VAR"
+          echo "Job: $JOB_LEVEL_VAR"
+
+      - name: Decode JSON (fromJSON)
+        run: |
+          echo '${{ fromJSON(needs.setup.outputs.encoded) }}'
+
+      - name: Conditional logic with endsWith
+        if: ${{ endsWith(github.actor, 'bot') }}
+        run: echo "Triggered by a bot"
+
+  service-test:
+    needs: test
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    services:
+      redis:
+        image: redis
+        ports:
+          - 6379:6379
+    steps:
+      - name: Test Redis connection
+        run: |
+          redis-cli -h localhost ping || echo "Redis not ready"
+
+  final:
+    runs-on: ubuntu-latest
+    needs: [setup, test, service-test]
+    steps:
+      - name: Summary
+        run: |
+          echo "Jobs completed: ${{ join(needs.*, ', ') }}"
