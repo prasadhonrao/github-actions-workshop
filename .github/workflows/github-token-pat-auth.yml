@@ -1,0 +1,18 @@
+name: GitHub Token - PAT Auth
+
+on:
+  workflow_dispatch:
+
+jobs:
+  pat-auth-demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v2
+
+      - name: 🔐 Authenticate using PAT
+        run: echo "${{ secrets.PERSONAL_ACCESS_TOKEN }}" | gh auth login --with-token
+
+      - name: ✅ Verify authentication
+        run: gh auth status
