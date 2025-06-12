@@ -13,7 +13,6 @@ env:
 defaults:
   run:
     shell: bash
-    working-directory: ./scripts
 
 concurrency:
   group: feature-demo-${{ github.ref }}
@@ -32,7 +31,6 @@ jobs:
           image: node:20
           options: --cpus 1
           run: |
-            cd /github/workspace
             echo "jsonString=$(echo '${{ toJSON(env) }}')" >> $GITHUB_OUTPUT
         id: encode
 
