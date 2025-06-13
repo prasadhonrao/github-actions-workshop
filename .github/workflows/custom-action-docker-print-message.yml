@@ -7,7 +7,7 @@ on:
       - '.github/workflows/custom-action-docker-print-message.yml'
   workflow_dispatch:
     inputs:
-      name:
+      message:
         # Friendly description to be shown in the UI instead of 'name'
         description: 'Message to print'
         # Default value if no value is explicitly provided
@@ -28,4 +28,4 @@ jobs:
       - name: Run Hello Docker Action
         uses: ./.github/actions/print-message-container-action
         with:
-          message: "${{ inputs.name }}"
+          message: "${{ inputs.message }}"
