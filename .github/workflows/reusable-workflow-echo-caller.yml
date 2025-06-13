@@ -10,7 +10,11 @@ jobs:
     uses: ./.github/workflows/reusable-workflow-echo.yml
     with:
       my-input: 'Hello, world!'
-  # say-goodbye:
+  say-hello-1:
+    uses: ./.github/workflows/reusable-workflow-echo.yml
+    with:
+      my-input: 'Good bye!'
+      # say-goodbye:
   #   uses: prasadhonrao/github-actions-workshop-shared-repo/.github/workflows/reusable-workflow-echo.yml
   #   with:
   #     my-input: 'Goodbye!'
