@@ -238,6 +238,11 @@ data = [
         "[![Event - Discussion](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/event-discussion.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/event-discussion.yml)"
     ),
     (
+        "[Event - Discussion Comment](./labs/events/discussion-comment/lab.md)", 
+        "[View Solution](./labs/events/discussion-comment/solution.md)", 
+        "[![Event - Discussion Comment](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/event-discussion-comment.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/event-discussion-comment.yml)"
+    ),
+    (
         "[Event - Pull Request](./labs/events/pull-request/lab.md)", 
         "[View Solution](./labs/events/pull-request/solution.md)", 
         "[![Event - Pull Request](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/event-pull-request.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/event-pull-request.yml)"
