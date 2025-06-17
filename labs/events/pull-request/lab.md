@@ -1,4 +1,4 @@
-## Lab: Setting Up a Pull Request Workflow in GitHub Actions
+## Lab: Event - Pull Request
 
 This lab will guide you through the process of creating a GitHub Actions workflow to handle pull request events, dynamically create environments, and simulate deployment tasks. By the end of this lab, you will have a functioning workflow that responds to pull requests on the `main` branch.
 

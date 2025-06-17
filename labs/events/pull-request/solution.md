@@ -1,7 +1,7 @@
-## Solution: Pull Request Event
+## Solution: Event - Pull Request
 
 ```yaml
-name: Pull Request Event
+name: Event - Pull Request
 
 on:
   pull_request:
