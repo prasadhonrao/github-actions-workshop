@@ -1,7 +1,7 @@
-## Solution: Express Server No Cache
+## Solution: Caching - Express Server No Cache
 
 ```yaml
-name: Express Server without cache
+name: Caching - Express Server without cache
 
 on:
   workflow_dispatch:

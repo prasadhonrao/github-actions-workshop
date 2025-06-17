@@ -1,7 +1,7 @@
-## Solution: Environment Variable List
+## Solution: List Environment Variables
 
 ```yaml
-name: Env Var List
+name: Env Var - List
 
 on:
   workflow_dispatch:

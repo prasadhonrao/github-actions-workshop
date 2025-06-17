@@ -1,7 +1,7 @@
-## Solution: Express Server with Cache
+## Solution: Caching - Express Server with Cache
 
 ```yaml
-name: Express Server CI with cache
+name: Caching - Express Server CI with cache
 
 on:
   workflow_dispatch:
