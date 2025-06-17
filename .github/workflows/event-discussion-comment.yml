@@ -13,7 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Log comment
-        run: echo "Comment: ${GITHUB_EVENT_COMMENT_BODY}"
+        run: |
+          echo "Comment body: ${{ github.event.comment.body }}"
+          echo "Comment author: ${{ github.event.comment.user.login }}"
 
       - name: Check for keyword in comment
         if: contains(github.event.comment.body, 'urgent')
