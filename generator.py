@@ -233,9 +233,14 @@ data = [
         ""
     ),
     (
-        "[Pull Request Event](./labs/events/pull-request/lab.md)", 
+        "[Event - Discussion](./labs/events/discussion/lab.md)", 
+        "[View Solution](./labs/events/discussion/solution.md)", 
+        "[![Event - Discussion](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/event-discussion.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/event-discussion.yml)"
+    ),
+    (
+        "[Event - Pull Request](./labs/events/pull-request/lab.md)", 
         "[View Solution](./labs/events/pull-request/solution.md)", 
-        "[![Reusable Workflow Echo Caller](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/reusable-workflow-echo-caller.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/reusable-workflow-echo-caller.yml)"
+        "[![Event - Pull Request](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/event-pull-request.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/event-pull-request.yml)"
     ),
     (
         "",  # This row will be a blank row (no ID, no content)
