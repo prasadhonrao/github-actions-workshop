@@ -2,7 +2,20 @@ name: Event - Discussion
 
 on:
   discussion:
-    types: [created, edited, deleted]
+    types:
+      [
+        created,
+        edited,
+        deleted,
+        pinned,
+        unpinned,
+        locked,
+        unlocked,
+        transferred,
+        category_changed,
+        answered,
+        unanswered,
+      ]
 
 jobs:
   handle-discussion:

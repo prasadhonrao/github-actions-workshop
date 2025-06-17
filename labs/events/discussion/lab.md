@@ -38,7 +38,20 @@ name: Handle GitHub Discussion Events
 
 on:
   discussion:
-    types: [created, edited, deleted]
+    types:
+      [
+        created,
+        edited,
+        deleted,
+        pinned,
+        unpinned,
+        locked,
+        unlocked,
+        transferred,
+        category_changed,
+        answered,
+        unanswered,
+      ]
 
 jobs:
   handle-discussion:
@@ -101,6 +114,26 @@ You can also:
    - Conditional messages depending on the event
 
 ---
+
+## Supported `types` for the `discussion` Event
+
+GitHub Actions supports the following activity types for the `discussion` event:
+
+| Type               | Description                                 |
+| ------------------ | ------------------------------------------- |
+| `created`          | When a new discussion is created            |
+| `edited`           | When the title or body is edited            |
+| `deleted`          | When a discussion is deleted                |
+| `pinned`           | When a discussion is pinned                 |
+| `unpinned`         | When a discussion is unpinned               |
+| `locked`           | When a discussion is locked                 |
+| `unlocked`         | When a discussion is unlocked               |
+| `transferred`      | When a discussion is moved between repos    |
+| `category_changed` | When the category of the discussion changes |
+| `answered`         | When a comment is marked as the answer      |
+| `unanswered`       | When the answer status is removed           |
+
+> 💡 **Note:** Adding or removing a **label** to a discussion does **not** trigger the `discussion` event.
 
 ## Summary
 
