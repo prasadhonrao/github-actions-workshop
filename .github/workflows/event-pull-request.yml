@@ -20,12 +20,12 @@ jobs:
         run: |
           # Generate a dynamic environment name based on PR number
           PR_NUMBER=${{ github.event.pull_request.number }}
-          echo "environment-name=pr-${PR_NUMBER}" >> $GITHUB_ENV
+          echo "environment_name=pr-${PR_NUMBER}" >> $GITHUB_ENV
 
       # Step 3: Deploy to the dynamically created environment
       - name: Deploy Application
         env:
-          DEPLOY_ENV: ${{ env.environment-name }}
+          DEPLOY_ENV: ${{ env.environment_name }}
         run: |
           echo "Deploying application to environment: $DEPLOY_ENV"
           # Add your deployment commands here
