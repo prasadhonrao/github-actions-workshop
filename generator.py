@@ -75,8 +75,8 @@ data = [
         "N/A"
     ),
     (
-        "[Runner - Self Hosted](./labs/runner/self-hosted/lab.md)", 
-        "[View Solution](./labs/runner/self-hosted/solution.md)", 
+        "[Runner - Self Hosted](./labs/runners/self-hosted/lab.md)", 
+        "[View Solution](./labs/runners/self-hosted/solution.md)", 
         "[![Runner - Self Hosted](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/runner-self-hosted.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/runner-self-hosted.yml)"
     ),
     (
