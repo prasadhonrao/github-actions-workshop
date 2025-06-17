@@ -1,4 +1,4 @@
-name: Express Server with cache
+name: Caching - Express Server with cache
 
 on:
   workflow_dispatch:
