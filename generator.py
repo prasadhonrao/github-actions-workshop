@@ -143,7 +143,7 @@ data = [
         ""
     ),
     (
-        "[Create ASP.NET Web API](./labs/aspnet-webapi/create-aspnet-webapi-lab.md)", 
+        "[Create ASP.NET Web API](./labs/aspnet-webapi/create-webapi/lab.md)", 
         "N/A", 
         "N/A"
     ),
@@ -188,14 +188,14 @@ data = [
         ""
     ),
     (
-        "[Express Server without cache](./labs/caching/lab.md)", 
+        "[Caching - Express Server without cache](./labs/caching/lab.md)", 
         "[View Solution](./labs/caching/solution-no-cache.md)", 
-        "[![Express Server without cache](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/express-server-without-cache.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/express-server-without-cache.yml)"
+        "[![Caching - Express Server with cache](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/caching-express-server-with-cache.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/caching-express-server-with-cache.yml)"
     ), 
     (
-        "[Express Server with cache](./labs/caching/lab.md)", 
+        "[Caching - Express Server with cache](./labs/caching/lab.md)", 
         "[View Solution](./labs/caching/solution-with-cache.md)", 
-        "[![Express Server with cache](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/express-server-with-cache.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/express-server-with-cache.yml)"
+        "[![Caching - Express Server without cache](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/caching-express-server-without-cache.yml/badge.svg)](https://github.com/prasadhonrao/github-actions-workshop/actions/workflows/caching-express-server-without-cache.yml)"
     ), 
     (
         "",  # This row will be a blank row (no ID, no content)
